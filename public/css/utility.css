@@ -1,0 +1,74 @@
+.header li.light:first-child{
+    transition: color 0.1s ease-in-out;
+}
+
+.header li.light:hover .parent{
+    color:  rgb(145, 139, 139);
+}
+
+.mybtn{
+    font-size: 2rem;
+    /* border: 2px solid red; */
+    border-radius: 2rem;
+    display: inline;
+    width: 20rem;
+    margin: 1rem auto;
+    background-color: #121212;
+    padding: 0.5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.mybtn-secoundry{
+    display: block;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    color: white;
+    display: inline;
+    width: 30rem;
+    background-color: #121212;
+    padding: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.mybtn-secoundry:hover{
+     background-color: white;
+}
+.my-blog-btn{
+    display: block;
+    font-size: 1rem;
+    border-radius: 2rem;
+    color: white;
+    display: inline;
+    width: 9rem;
+    background-color: #121212;
+    padding: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.my-blog-btn:hover{
+     background-color: white;
+}
+
+.mybtn-secoundry:hover a{
+    color: black !important;
+}
+.mybtn-secoundry a{
+    color: white !important;
+}
+.mybtn:hover{
+    background-color: white;
+    color: black;
+}
+.bgGrey{
+    background-color: #f7f7fa;
+}
+
+
+
+.card-margin{
+    margin: 1rem;
+}
+
+div.address{
+    font-size: 1.5rem;
+}
+
+

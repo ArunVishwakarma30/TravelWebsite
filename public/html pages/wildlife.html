@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a93dbb61c3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mediaQ.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
+
+    <title>Desert</title>
+
+</head>
+
+<body>
+    <header class="header fixed-top shadow p-3 mb-5 bg-white rounded">
+        <div class="container py-4 d-none d-sm-block ">
+          <div class="Myrow v-center">
+            <div class="header-item item-left">
+              <p class="logo ">
+                <a href="/index.html"> Shubh Yaatra </a>
+              </p>
+            </div>
+            <div class="header-item item-center">
+              <nav class="menu">
+                <ul class="menu-main">
+                  <li class="light">
+                    <a class="parent" href="/">Home</a>
+                  </li>
+                  <li class="dropdown light">
+                    <p class="parent d-inline" href="">Categories<i class="fa-solid fa-xs fa-angle-down angle"></i>
+                    </p>
+                    <div class="sub-menu mega-menu mega-menu-clm-4">
+                      <div class="listItem">
+                        <ul>
+                          <li> <a class="ml-3" href="./beaches.html"><i
+                                class="fa-solid fa-2x mr-5 fa-umbrella-beach"></i> &nbsp Beaches
+                            </a></li>
+                          <li><img src="https://img.icons8.com/ios-filled/50/000000/cat-footprint.png" />
+                            </i><a href="./wildlife.html">&nbsp &nbsp Wildlife</a></li>
+                           <li><img src="https://img.icons8.com/dotty/80/000000/national-park.png" /></i><a
+                              href="./hill.html">&nbsp
+                              &nbsp Hill Station</a></li>
+                          <li><i class="fa-solid fa-2x fa-route"></i><a href="./adventure.html">&nbsp &nbsp
+                              Adventure</a></li> 
+    
+                        </ul>
+                      </div>
+                      <div class="listItem">
+                        <ul>
+                          <li> <img src="../Images/desert.png" alt=""> <a href="./desert.html">&nbsp Deserts</a>
+                          </li>
+                          <li><i class="fa-solid fa-2x fa-gopuram"></i><a href="./religious.html">&nbsp&nbsp
+                              Religious</a></li>
+                           <li><i class="fa-solid fa-2x fa-building-columns"></i><a
+                              href="./heritage.html">&nbsp&nbsp
+                              Heritage</a></li>
+                          <li><i class="fa-solid fa-2x fa-person-swimming"></i><a href="./waterfron.html">&nbsp
+                              Waterfront</a></li> 
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                   <li class="dropdown light">
+                    <p class="parent d-inline text-dark" href="">Region <i class="fa-solid fa-xs fa-angle-down angle"></i>
+                    </p>
+                    <div class="sub-menu single-clm-menu listItem">
+                      <ul>
+                        <li><a href="./east.html">East and North-East India</a></li>
+                        <li><a href="./north.html">North India</a></li>
+                        <li><a href="./south.html">South India</a></li>
+                        <li><a href="./west.html">West India</a></li>
+                        <li><a href="./central.html">Central India</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="light">
+                    <a class="parent" href="./blog.html">Blogs</a>
+                  </li> 
+    
+                </ul>
+              </nav>
+            </div>
+            <div class="header  login item-right">
+              <ul>
+                <li class="mybtn-secoundry   rounded">
+                  <a class="" id="open">Login
+                  </a>
+                  <div class="modal_container" id="modal_container">
+                    <div class="mymodal">
+                      <form method="post" action="/">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" name="Email" aria-describedby="emailHelp" required>
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label" >Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" name="Password" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      <button id="close" class="btn btn-danger">Close</button>
+    
+    
+    
+                    </div>
+                  </div>
+    
+                </li>
+                <li class="mybtn-secoundry  rounded">
+                  <a id="register">Register</a>
+                  <div class="modal_container" id="modal_container1">
+                    <div class="mymodal">
+                      <form action="/" method="post">
+                        <div class="mb-3">
+    
+                          <label for="FirstName" class="form-label">First Name</label>
+                          <input type="text" class="form-control" id="FirstName" name="FirstName" aria-describedby="fname" required>
+                          <div id="fname" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+    
+                          <label for="lastName" class="form-label">Last Name</label>
+                          <input type="text" class="form-control" id="lastName" name="LastName" aria-describedby="lname" required>
+                          <div id="lname" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                          
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" name="EmailAdd" aria-describedby="emailHelp" required>
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" name="Pswd" id="exampleInputPassword1" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" name="cnfrmPswd" id="exampleInputPassword1" required required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      <button id="signed_in" class="btn btn-danger">Close</button>
+    
+    
+    
+                    </div>
+                  </div>
+    
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+    
+        </div>
+        <div class="phoneNav container">
+          <button class="btn phoneMenu d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"> Menu </button>
+    
+    
+    
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+    
+    
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 id="offcanvasRightLabel"><a href="/index.html" class="logo">Subha Yaatra</a></h5>
+            </div>
+            <div class="offcanvas-body">
+    
+    
+              <div class="accordion accordion-flush text-center" id="accordionFlushExample">
+    
+                <div class="accordion-item ">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button border-0  collapsed ml-3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Categories
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-light">
+                      <ul class="list-group list-group-flush">
+    
+                        <li class="list-group-item"><a href="./beaches.html">Beaches</a> </li>
+                        <li class="list-group-item"><a href="./desert.html">Desert</a> </li>
+                        <li class="list-group-item"><a href="./wildlife.html">Wildlife</a> </li>
+                        <li class="list-group-item"><a href="./religious.html">Religious</a> </li>
+                        {{!-- <li class="list-group-item"><a href="./hill.html">Hill Station</a> </li>
+                        <li class="list-group-item"><a href="./heritage.html">Heritage</a> </li>
+                        <li class="list-group-item"><a href="./adventure.html">Adventure</a> </li>
+                        <li class="list-group-item"><a href="./waterfron.html">Waterfront</a> </li> --}}
+    
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Region
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+    
+                      <ul class="list-group list-group-flush">
+    
+                        <li class="list-group-item"> <a href="./east.html">East And North-East India</a> </li>
+                        <li class="list-group-item"> <a href="./north.html">North India</a> </li>
+                        <li class="list-group-item"> <a href="./south.html">South India</a> </li>
+                        <li class="list-group-item"> <a href="./west.html">West India</a> </li>
+                        <li class="list-group-item"> <a href="./central.html">Central India</a> </li>
+    
+    
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                        exciting happening here in terms of content, but just filling up the space to make it look, at least
+                        at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                  </div>
+                </div>
+    
+    
+              </div>
+            </div>
+          </div>
+        </div>>
+      </header>
+    
+    <head class="container-fluid ">
+        <div class="wild-bg">
+            <div
+                class="container decoration text-center d-flex flex-column text-light justify-content-center align-items-center m-auto h-100 fs-1">
+                <span class="mb-4 text-uppercase">// INDIA</span>
+                <h1 class="fw-bold text-uppercase">Places For The Best Wildlife Experience In India</h1>
+            </div>
+        </div>
+    </head>
+
+
+
+
+
+
+    <div class="container mt-5 overflow-hidden">
+
+        <div class="row gx-5">
+            <div class="col-lg-8">
+                <div class="p-3  bg-light">
+                    <p class="start fs-2">
+                        India has very rich and diverse wildlife and has always drawn the attention of nature lovers from around the globe. From the mammoth mountain ranges in the north, the marshy lands in the east, to the tip of Kanyakumari in the south, India is home to a number of wildlife conservation parks and sanctuaries. These places offer some of the best wildlife experiences to its visitors. Here’s a list of the places you should travel to this year for their exquisite wildlife in India.
+                    </p>
+
+                    <h1 class="fw-bolder fs-1">Wildlife tourism in India</h1>
+                    <!------------------------------------- Place 1 --------------------------------->
+                    <h2 class="pt-2 fw-bold mb-2">1. Jim Corbett National Park </h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/wildlife/jim.jpg" data-lightbox="image-1"
+                                        data-title="Jim Corbett National Park "><img src="../images/wildlife/jim.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Jim Corbett National Park, Ramnagar, Uttarakhand 244715 India (IN).
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                                            aria-controls="offcanvasWithBackdrop">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Jim Corbett National Park 
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.531447559264!2d78.77247161481412!3d29.530013782072427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a24ffffffffff%3A0x3017b72d3d253fd7!2sJim%20Corbett%20National%20Park!5e0!3m2!1sen!2sin!4v1650225335539!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4 mb-2">
+                            Jim Corbett National Park wildlife safari in India is also one of the most exciting safaris. Situated in the mountainous district of Nainital, Jim Corbett National Park which is a part of the larger Corbett Tiger reserve is home to a large number of tigers. If you are lucky, you may spot a white tiger as well. This is one of the most popular wildlife destinations in India.
+<br>
+                            <strong>Things to do:</strong> Drive around the park to catch a glimpse of the wildlife, try angling at Kosi River, visit the Corbett falls
+                            <br>
+                            <strong>Species to see:</strong> Tigers, Spotted deer, Elephants, Golden jackal, sambar deers
+                        </div>
+                    </div>
+
+
+                    <!------------------------------------- Place 2 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">2. Ranthambore National Park</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/wildlife/Ranthambore.webp" data-lightbox="image-1"
+                                        data-title="Ranthambore National Park"><img src="../images/wildlife/Ranthambore.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Ranthambore National Park, Rajasthan India, Pin Code 322001
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-2"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-2"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Ranthambore National Park
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114724.61367355262!2d76.42408206982682!3d26.028838219277677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8652099279a64a15!2sRanthmbhor%20national%20park!5e0!3m2!1sen!2sin!4v1650225471500!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Ranthambore National Park wildlife safari in India is one of the most adventurous safaris. This National Park is located in Rajasthan and was previously a famous hunting ground for the Maharajas. Now a wildlife conservation park, this park is most famous for its Tiger trails and Bird watching tours.
+<br>
+                            <strong>Things to do:</strong> Bakula has a lot of waterholes and hence is crowded with wildlife. The Raj Bagh ruins are ancient ruined structures, domes and arches. The Padam Talao is another lake worth visiting. The Ranthambore fort is ideally located. The view from the top is mesmerizing.
+                            
+                            <br>
+                            <strong>Species to see:</strong> Tigers, leopards, Hyenas, Jackals, Jungle cats, Indian Foxes and a wide range of birds like Pelicans, Ibis, Flamingos, Egrets, Parakeets Opening/Closing times: The Park is open from October to June. It is closed for the remaining months of the year. The morning trip is from 6.30 am to 10 am. And the evening trip is from 2.30 pm to 6 pm. The Charges are around Rs. 75 for an Indian national in a canter and Rs. 131 for an Indian national in a gypsy. For foreign nationals it is Rs. 475 in a canter and Rs. 530 in a gypsy.
+                            
+                        </div>
+                    </div>
+
+                    <!------------------------------------- Place 3 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">3. Bannerghatta Biological Park</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/wildlife/Bannerghatta.jpg.crdownload" data-lightbox="image-1"
+                                        data-title="Bannerghatta Biological Park"><img src="../images/wildlife/Bannerghatta.jpg.crdownload"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Bannerghatta Biological Park, Bannerghatta Main Road, Bannerughatta, Bengaluru, Karnataka  560083, India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-3"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-3"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"> Bannerghatta Biological Park
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.6905385694745!2d77.5656463144963!3d12.798588190969511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae69e00b196db1%3A0x4f6f2e78ffa13a5f!2sBannerghatta%20Biological%20Park!5e0!3m2!1sen!2sin!4v1650225916400!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Just at the outskirts, south of Bangalore, is the Bannerghatta Biological Park. This park includes a zoo, an elephant sanctuary, a tiger park and a butterfly park. Who would have thought that such a wonderful nature’s treat lies in the middle of a bustling city?
+
+                            <br>
+                          <strong>  Things to do:</strong> Check out the Butterfly Park and go on a tiger safari, also go boating
+                          <br>
+                            <strong>Species to see:</strong> Tigers, leopards, Elephants, spotted deer, barking deers, butterflies, snakes
+                        </div>
+                    </div>
+
+                    <!------------------------------------- Place 4 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">4. Kaziranga National Park</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/wildlife/Kaziranga.webp" data-lightbox="image-1"
+                                        data-title="Kaziranga National Park"><img src="../images/wildlife/Kaziranga.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Kaziranga National Park, Assam 785609 India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-4"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-4"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Kaziranga National Park
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7139.727885729026!2d92.98976762406976!3d26.52449993318502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3744fb947963bb27%3A0xafc017e8e21cfc40!2skaziranga%20national%20park%20and%20tiger%20reserve!5e0!3m2!1sen!2sin!4v1650226013827!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            This park has the largest population of one horned Rhino in the World. This national park has achieved great success with its conservation projects.
+
+                            <br>
+                            <strong>Things to do:</strong> Check out the tea plantations around the park Go on a safari to spot rhinos and tigers, Take in a view of the entire park from the watchtowers
+                            <br>
+                            <strong>Species to see:</strong> Tigers, Rhinos, Elephants, Swamp deer, Wild Buffalo
+                        </div>
+                    </div>
+
+
+                    <!------------------------------------- Place 5 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">5. Bandhavgarh National Park</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/wildlife/Bandhavgarh.jpg" data-lightbox="image-1"
+                                        data-title="Bandhavgarh National Park"><img src="../images/wildlife/Bandhavgarh.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Bandhavgarh National Park – Madhya Pradesh 484664 India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-5"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-5"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Bandhavgarh National Park
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4557750.378823135!2d82.37401879681912!3d24.711873461776406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3986a53a220f83dd%3A0x39d9beeab2028e82!2sBandhavgarh%20National%20Park!5e0!3m2!1sen!2sin!4v1650226229494!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            This Park has a large population of tigers and langurs. The park is at the center of India and is home to the famous white tiger.
+
+                            <br>
+                            <strong>Things to do:</strong> Go for a birding tour or a jeep safari to catch a glimpse of the best wildlife. Also once there, do not miss out on seeing the Khajuraho temples. Also, have a look at the Bandhavgarh fort.
+                            <br>
+                            <strong>Species to see:</strong> Bengal tigers, Elephants, deers, primates, reptiles and a large number of birds
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------------------- Place 6 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">6. Hemis National Park  </h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/wildlife/hemis.webp" data-lightbox="image-1"
+                                        data-title="Hemis National Park "><img src="../images/wildlife/hemis.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Hemis National Park – Ladakh 194106 Inida
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-6"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-6"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Hemis National Park 
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d53097.959802571095!2d77.35320283539748!3d33.71871615851475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3902707b177afb8b%3A0xf74ea9833e5618e2!2sHemis%20National%20Park%2C%20P99Q%2BF7Q%20Jammu%20and%20Kashmir!3m2!1d33.718721099999996!2d77.38822239999999!4m5!1s0x3902707b177afb8b%3A0xf74ea9833e5618e2!2sHemis%20National%20Park!3m2!1d33.718721099999996!2d77.38822239999999!5e0!3m2!1sen!2sin!4v1650226526644!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            This is a high altitude national park in eastern Ladakh. The park is home to many endangered animals like the snow leopard, the Asiatic Ibex, the red fox, Tibetan wolf. This park has pine forests, meadows and is nothing short of a safari in heaven.
+
+                            <br>
+                            <strong>Things to do:</strong> Take an adventure trek at Hemis
+                            <br>
+                            <strong>Species to see:</strong> snow leopard, the Asiatic Ibex, the red fox, Tibetan wolf, Himalayan marmot, Blue sheep
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------------------- Place 7 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">7. The Great Himalayan National Park</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/wildlife/himalayan.webp" data-lightbox="image-1"
+                                        data-title=" Tadoba National Park "><img src="../images/wildlife/himalayan.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            The Great Himalayan National Park – Himachal Pradesh 175123 India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-7"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-7"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">The Great Himalayan National Park
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.5448081167424!2d77.14071281487777!3d31.891791681248492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904345539963725%3A0x3930505b5e390442!2sThe%20Great%20Himalayan%20National%20Park(office)!5e0!3m2!1sen!2sin!4v1650226732762!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            This park is in the snowcapped mountain regions of Kullu. With coniferous forests, sloping hills and green landscapes, this park is the crowning glory of the Himalayan slopes.
+
+                            <br>
+<strong>Things to do:</strong> Take a walk among the clouds, breathe in fresh pollution free air, go on a trek among the forest lands and take a boat ride on the river Tirthan. Also camp under the stars
+<br>
+<strong>Species to see:</strong> The snow leopard, musk deer, primates, Himalayan pit viper
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------------------- Place 8 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">8.  Tadoba National Park</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/wildlife/tadoba.webp" data-lightbox="image-1"
+                                        data-title=" Tadoba National Park "><img src="../images/wildlife/tadoba.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Tadoba National Park – Maharashtra India.
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-8"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-8"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"> Tadoba National Park – Maharashtra
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.2519590878383!2d79.3585003146081!3d20.248382686426307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2ccd16b6538703%3A0x418b2e1575b004d1!2sTadoba-Andhari%20National%20Park!5e0!3m2!1sen!2sin!4v1650226884214!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Tadoba is one of the largest national parks in Maharashtra. Very close to the city, Nagpur, Tadoba is most famous for its Tigers and Tadoba crocodiles.
+                            <br>
+                            <strong>Things to do:</strong> Go on the tiger safari and bird watching trails
+                            <br>
+                            <strong>Species to see:</strong> The Chimur Hills and Andhari sanctuary
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="col-lg-4 d-md-none d-sm-none p-0 d-none d-lg-inline">
+
+
+
+                <!------- Top Places Section -->
+                <div class="bg-light ">
+                    <h2 class="pt-2 places-heading mt-2 fw-bold  mb-3">Discover your next holiday destination
+                    </h2>
+
+                    <div class="d-flex mb-4">
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/solo-2.jpg" class=" top-places mb-2 " alt=" ">
+                            <h4><a href="./solo.html">Solo</a></h4>
+                        </div>
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/Beaches/bg-image-2.jpg" class=" top-places mb-2" alt=" ">
+                            <h4><a href="./beaches.html"></a>Beaches</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/religious/religious.jpg" class=" top-places mb-2" alt=" ">
+                            <h4><a href="./religious.html">Religious</a></h4>
+                        </div>
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/desert/desert-bg.jpg" class=" top-places mb-2" alt=" ">
+                            <h4><a href="./desert.html">Desert</a></h4>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/girl-1.jpg" class=" top-places" alt=" ">
+                            <h4><a href="./weekend.html">weekend</a></h4>
+                        </div>
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/wildlife/wild-bg.jpg" class=" top-places" alt=" ">
+                            <h4><a href="./wildlife.html">Wildlife</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!----------- advertise ---------------->
+
+                <div class="carousal-container">
+
+                    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner ">
+                            <div class="carousel-item  active">
+                                <img src="../images/couple.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption ">
+                                    <h5 class="fs-2">Romantic Places</h5>
+                                    <p class="fs-4">In life it's not where you go. It's who you travel with.</p>
+                                    <button type="button" class="btn btn-primary mb-2"><a href="./couple.html"
+                                            class="text-light  ">Explore</a></button>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/family-4.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption ">
+                                    <h5 class="fs-2">Adventure</h5>
+                                    <p class="fs-4">Climb the mountain not so the world can see you, but so you can see
+                                        the world..</p>
+                                    <button type="button" class="btn btn-primary mb-2"><a href="./adv.html"
+                                            class="text-light ">Explore</a></button>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/family-3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption ">
+                                    <h5 class="fs-2">Family Spots</h5>
+                                    <p class="fs-4">"Travelling in the company of those we love is home in motion."</p>
+                                    <button type="button" class="btn btn-primary mb-2"><a href="./family.html"
+                                            class="text-light ">Explore</a></button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="beSticky">
+                    <h2 class="pt-2 places-heading mt-2 fw-bold  text-uppercase mb-3"> Recent Posts
+                    </h2>
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../images/frnds-1.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">There is a whole world out there. Pack your backpack, your friends and
+                                    go.</h5>
+                                <a href="./friends.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../images/solo-3.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">"Travelling alone will be the scariest, most liberating, life changing
+                                    experience of your life."</h5>
+                                <a href="./solo.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../images/girl-2.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">Recharge after a hectic week’s work with an idyllic trip over the
+                                    weekend.</h5>
+                                <a href="./weekend.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../Images/adventure-1.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">Climb the mountain not so the world can see you, but so you can see the
+                                    world.k</h5>
+                                <a href="./adv.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../Images/desert/jaisalmer.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">Top Deserts Around the Country.</h5>
+                            </div>
+                            <a href="./desert.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+
+        <!-- <div class="beSticky">
+                <h2 class="pt-2 places-heading mt-2 fw-bold  text-uppercase mb-3"> Most Viewed
+                </h2>
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+                
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+
+               </div> -->
+        </aside>
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/mdb.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/lightbox.js"></script>
+</body>
+
+</html>

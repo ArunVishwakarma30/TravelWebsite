@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a93dbb61c3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mediaQ.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
+
+    <title>Beaches</title>
+
+</head>
+
+<body>
+    <header class="header fixed-top shadow p-3 mb-5 bg-white rounded">
+        <div class="container py-4 d-none d-sm-block ">
+          <div class="Myrow v-center">
+            <div class="header-item item-left">
+              <p class="logo ">
+                <a href="/index.html"> Shubh Yaatra </a>
+              </p>
+            </div>
+            <div class="header-item item-center">
+              <nav class="menu">
+                <ul class="menu-main">
+                  <li class="light">
+                    <a class="parent" href="/">Home</a>
+                  </li>
+                  <li class="dropdown light">
+                    <p class="parent d-inline" href="">Categories<i class="fa-solid fa-xs fa-angle-down angle"></i>
+                    </p>
+                    <div class="sub-menu mega-menu mega-menu-clm-4">
+                      <div class="listItem">
+                        <ul>
+                          <li> <a class="ml-3" href="./beaches.html"><i
+                                class="fa-solid fa-2x mr-5 fa-umbrella-beach"></i> &nbsp Beaches
+                            </a></li>
+                          <li><img src="https://img.icons8.com/ios-filled/50/000000/cat-footprint.png" />
+                            </i><a href="./wildlife.html">&nbsp &nbsp Wildlife</a></li>
+                           <li><img src="https://img.icons8.com/dotty/80/000000/national-park.png" /></i><a
+                              href="./hill.html">&nbsp
+                              &nbsp Hill Station</a></li>
+                          <li><i class="fa-solid fa-2x fa-route"></i><a href="./adventure.html">&nbsp &nbsp
+                              Adventure</a></li> 
+    
+                        </ul>
+                      </div>
+                      <div class="listItem">
+                        <ul>
+                          <li> <img src="../Images/desert.png" alt=""> <a href="./desert.html">&nbsp Deserts</a>
+                          </li>
+                          <li><i class="fa-solid fa-2x fa-gopuram"></i><a href="./religious.html">&nbsp&nbsp
+                              Religious</a></li>
+                           <li><i class="fa-solid fa-2x fa-building-columns"></i><a
+                              href="./heritage.html">&nbsp&nbsp
+                              Heritage</a></li>
+                          <li><i class="fa-solid fa-2x fa-person-swimming"></i><a href="./waterfron.html">&nbsp
+                              Waterfront</a></li> 
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                   <li class="dropdown light">
+                    <p class="parent d-inline text-dark" href="">Region <i class="fa-solid fa-xs fa-angle-down angle"></i>
+                    </p>
+                    <div class="sub-menu single-clm-menu listItem">
+                      <ul>
+                        <li><a href="./east.html">East and North-East India</a></li>
+                        <li><a href="./north.html">North India</a></li>
+                        <li><a href="./south.html">South India</a></li>
+                        <li><a href="./west.html">West India</a></li>
+                        <li><a href="./central.html">Central India</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="light">
+                    <a class="parent" href="./blog.html">Blogs</a>
+                  </li> 
+    
+                </ul>
+              </nav>
+            </div>
+            <div class="header  login item-right">
+              <ul>
+                <li class="mybtn-secoundry   rounded">
+                  <a class="" id="open">Login
+                  </a>
+                  <div class="modal_container" id="modal_container">
+                    <div class="mymodal">
+                      <form method="post" action="/">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" name="Email" aria-describedby="emailHelp" required>
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label" >Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" name="Password" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      <button id="close" class="btn btn-danger">Close</button>
+    
+    
+    
+                    </div>
+                  </div>
+    
+                </li>
+                <li class="mybtn-secoundry  rounded">
+                  <a id="register">Register</a>
+                  <div class="modal_container" id="modal_container1">
+                    <div class="mymodal">
+                      <form action="/" method="post">
+                        <div class="mb-3">
+    
+                          <label for="FirstName" class="form-label">First Name</label>
+                          <input type="text" class="form-control" id="FirstName" name="FirstName" aria-describedby="fname" required>
+                          <div id="fname" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+    
+                          <label for="lastName" class="form-label">Last Name</label>
+                          <input type="text" class="form-control" id="lastName" name="LastName" aria-describedby="lname" required>
+                          <div id="lname" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                          
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" name="EmailAdd" aria-describedby="emailHelp" required>
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" name="Pswd" id="exampleInputPassword1" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" name="cnfrmPswd" id="exampleInputPassword1" required required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      <button id="signed_in" class="btn btn-danger">Close</button>
+    
+    
+    
+                    </div>
+                  </div>
+    
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+    
+        </div>
+        <div class="phoneNav container">
+          <button class="btn phoneMenu d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"> Menu </button>
+    
+    
+    
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+    
+    
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 id="offcanvasRightLabel"><a href="/index.html" class="logo">Subha Yaatra</a></h5>
+            </div>
+            <div class="offcanvas-body">
+    
+    
+              <div class="accordion accordion-flush text-center" id="accordionFlushExample">
+    
+                <div class="accordion-item ">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button border-0  collapsed ml-3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Categories
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-light">
+                      <ul class="list-group list-group-flush">
+    
+                        <li class="list-group-item"><a href="./beaches.html">Beaches</a> </li>
+                        <li class="list-group-item"><a href="./desert.html">Desert</a> </li>
+                        <li class="list-group-item"><a href="./wildlife.html">Wildlife</a> </li>
+                        <li class="list-group-item"><a href="./religious.html">Religious</a> </li>
+                        {{!-- <li class="list-group-item"><a href="./hill.html">Hill Station</a> </li>
+                        <li class="list-group-item"><a href="./heritage.html">Heritage</a> </li>
+                        <li class="list-group-item"><a href="./adventure.html">Adventure</a> </li>
+                        <li class="list-group-item"><a href="./waterfron.html">Waterfront</a> </li> --}}
+    
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Region
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+    
+                      <ul class="list-group list-group-flush">
+    
+                        <li class="list-group-item"> <a href="./east.html">East And North-East India</a> </li>
+                        <li class="list-group-item"> <a href="./north.html">North India</a> </li>
+                        <li class="list-group-item"> <a href="./south.html">South India</a> </li>
+                        <li class="list-group-item"> <a href="./west.html">West India</a> </li>
+                        <li class="list-group-item"> <a href="./central.html">Central India</a> </li>
+    
+    
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                        exciting happening here in terms of content, but just filling up the space to make it look, at least
+                        at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                  </div>
+                </div>
+    
+    
+              </div>
+            </div>
+          </div>
+        </div>>
+      </header>
+
+    <head class="container-fluid">
+        <div class="beaches-bg">
+            <div
+                class="container decoration text-center d-flex flex-column justify-content-center align-items-center m-auto h-100 fs-1">
+                <span class="mb-4 text-uppercase">// INDIA</span>
+                <h1 class="fw-bold text-uppercase">MOST POUPULAR BEACHES TO VISIT IN INDIA</h1>
+            </div>
+        </div>
+    </head>
+
+
+
+
+
+
+    <div class="container mt-5 overflow-hidden">
+
+        <div class="row gx-5">
+            <div class="col-lg-8">
+                <div class="p-3  bg-light">
+                    <p class="start fs-2">
+                        Much of India is surrounded by ocean and the country has some incredibly scenic beaches that
+                        offer everything from solitude to parties. The best beaches in India can be found on the west
+                        coast, with <a href="" class="text-decoration-underline"> Goa being the most famous beach
+                            destination</a>. However, there are other places to consider as well, especially if you want
+                        to get away from the tourist trail.
+
+                        Of note, in October 2020, eight Indian beaches were awarded <a
+                            href="https://www.blueflag.global/" target="_blank" class="text-decoration-underline">Blue
+                            Flag</a> certification by the Foundation for Environmental Education in Denmark. The beaches
+                        are Puri Golden Beach in Odisha, Shivrajpur in Gujarat, Ghoghla in Diu, Kasarkod and Padubidri
+                        in Karnataka, Kappad in Kerala, Rushikonda in Andhra Pradesh, and Radhanagar in Andaman and
+                        Nicobar Islands. The Blue Flag certification means these beaches are clean, safe, and
+                        environmentally-friendly.
+                    </p>
+
+                    <h1 class="fw-bolder fs-1">Beaches in India</h1>
+                    <!------------------------------------- Place 1 --------------------------------->
+                    <h2 class="pt-2 fw-bold mb-2">1. Marine Drive</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/Beaches/marine.jpg" data-lightbox="image-1"
+                                        data-title="Marine Drive"><img src="../images/Beaches/marine.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Marine Lines S.O, Mumbai, Maharashtra, India (IN), Pin Code:-400020
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                                            aria-controls="offcanvasWithBackdrop">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Marine Drive
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.7328942549348!2d72.82081091458502!3d18.943213487164233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1e25ee8439d%3A0x5acd924f2726ad2b!2sMarine%20Dr%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1649765885467!5m2!1sen!2sin"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4 mb-2">
+                            Marine Drive, also called the Queen’s Necklace, is one of the most easily recognizable
+                            landmarks in Mumbai. This arc-shaped bay-side boulevard lining the Arabian Sea in South
+                            Mumbai is arguably the best spot to watch beautiful sunsets and indulge in leisurely walks.
+                            A favorite hangout spot of the Mumbaikars, it is a prime tourist attraction as well. When
+                            you step out of your hotels in Mumbai, make sure to explore this hotspot that offers
+                            splendid views of the city’s skyline.
+                        </div>
+                    </div>
+
+
+                    <!------------------------------------- Place 2 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">2. Varkala, Kerala</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/Beaches/varkala.jpg" data-lightbox="image-1"
+                                        data-title="Varkala Beach"><img src="../images/Beaches/varkala.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Varkala Beach, Kerala, India, Pin Code 695141
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-2"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-2"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Varkala
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.474597393533!2d76.70129683929466!3d8.735075881261496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05ef78255553a7%3A0xd4b8b4c5a045193e!2sVarkala%20Beach!5e0!3m2!1sen!2sin!4v1649847780398!5m2!1sen!2sin"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Varkala Beach, also known as Papanasham Beach is a beach situated in Varkala Town of Varkala
+                            Municipality in Thiruvananthapuram district, Kerala, India. The beach skirts the Arabian
+                            Sea, part of the Indian Ocean.Varkala beach is the only place in southern Kerala where <a
+                                href="https://en.wikipedia.org/wiki/Cliff">cliffs</a> are found adjacent to the Arabian
+                            Sea. These cliffs are of tertiary sedimentary formation, and named by geologists as Varkala
+                            Formation. They are a geological monument as recorded by the Geological Survey of India.
+                            Water spouts and <a href="https://en.wikipedia.org/wiki/Spa">spas</a> occur on the sides of
+                            these cliffs.
+                        </div>
+                    </div>
+
+                    <!------------------------------------- Place 3 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">3. Chandipur, Odisha</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/Beaches/Chandipur.jpg" data-lightbox="image-1"
+                                        data-title="Chandipur Beach"><img src="../images/Beaches/Chandipur.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Chandipur Beach, Balasore, Odisha 756025, India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-3"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-3"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Chandipur
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d59414.783538935284!2d87.00558845769453!3d21.45187495715667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e6!4m5!1s0x3a1cf2cb47f43b01%3A0x3327f44e5f020eec!2sChandipur%20Beach%2C%20Balasore%2C%20Odisha%20756025!3m2!1d21.4518786!2d87.0406081!4m4!1s0x3a1cf2cb47f43b01%3A0x3327f44e5f020eec!3m2!1d21.4518786!2d87.0406081!5e0!3m2!1sen!2sin!4v1649851166427!5m2!1sen!2sin"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Listed by Lonely Planet as one of the world's most unusual beaches, Chandipur is unique in
+                            India for its disappearing sea. At low tide, twice a day, it recedes for up to 5 kilometers
+                            (3.1 miles)! This means you can explore the seabed, having fun chasing red crabs and
+                            collecting shells and driftwood. Chandipur is located in Odisha's Balasore district, about
+                            four and a half hours north of capital Bhubaneshwar. The only drawback is the lack of
+                            quality accommodations there. Odisha Tourism's Panthaniwas is the best positioned property
+                            but facilities are basic. Discover more things to do in Odisha.
+                        </div>
+                    </div>
+
+                    <!------------------------------------- Place 4 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">4. Colva Beach, Goa</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/Beaches/colva.jpg" data-lightbox="image-1"
+                                        data-title="Colva Beach"><img src="../images/Beaches/colva.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Colova Beach Salcete, south Goa 403708 India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-4"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-4"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Colva Beach
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d61580.26267678611!2d73.87697483102743!3d15.280528879209374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e6!4m5!1s0x3bbfb418862d72a3%3A0xb5de1b202cad0935!2sColva%20Beach%2C%20Goa!3m2!1d15.2805316!2d73.91199449999999!4m4!1s0x3bbfb418862d72a3%3A0xb5de1b202cad0935!3m2!1d15.2805316!2d73.91199449999999!5e0!3m2!1sen!2sin!4v1649851102676!5m2!1sen!2sin"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Colva beach stretches for around 2.4 km, part of a beach consisting of about 25 km of powder
+                            white sand, lined along its shore by coconut palms, and extending as far as Bogmalo Beach to
+                            the north and Cabo de rama Beach to the South Goa’s coastline. Colva is now a famous tourist
+                            destination, enjoyed for its beach. The tourist industry is well developed with many budget
+                            hotels, guest houses, beach shacks, food stalls, small restaurants and pubs and bars,
+                            although these developments haven’t extended in any large degree to the nightlife. The
+                            beaches are constantly monitored by lifeguards and the swimming areas flagged with coloured
+                            flags accordingly. Being one of the famous beaches of Goa, this beach is highly crowded most
+                            of the time of the year. With a majority of its visitors being domestic Indian visitors this
+                            beach is mostly neglected by foreigners.
+                        </div>
+                    </div>
+
+
+                    <!------------------------------------- Place 5 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">5. Om Beach Gokarna, Karnataka</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/Beaches/Om.webp" data-lightbox="image-1"
+                                        data-title="Om Beach Gokarna"><img src="../images/Beaches/Om.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Om Beach Gokarna, North Canara district, Karnataka 581326 India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-5"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-5"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Om Beach Gokarna
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d61798.36088795941!2d74.28798422834076!3d14.519237902601864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e6!4m5!1s0x3bbe8218126fad05%3A0x294f4f7ab4235873!2sOm%20Beach%2C%20Gokarna%2C%20Karnataka%20581326!3m2!1d14.519240499999999!2d74.3230039!4m4!1s0x3bbe8218126fad05%3A0x294f4f7ab4235873!3m2!1d14.519240499999999!2d74.3230039!5e0!3m2!1sen!2sin!4v1649851687744!5m2!1sen!2sin"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Om Beach is a major tourist attraction in the coastal city of Gokarna, located in North
+                            Canara district. One of the acclaimed beaches in the country, Om Beach takes the shape of an
+                            "Om", a Hindu spiritual symbol. In the shape of two crescents joined together to form an Om,
+                            the beach offers a breathtaking view of the sunset. The long stretch of white sandy beach
+                            adjoining the rocky terrain appeals to travellers from around the world.
+                            Best Time To Visit Om Beach: The best time to visit Om beach and the nearby places is from
+                            the month of October until March. The temperature reached to about 32 degrees and the
+                            weather is pleasant throughout the day.
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------------------- Place 6 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">6. Rock Beach </h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/Beaches/rock.webp" data-lightbox="image-1"
+                                        data-title="Rock Beach"><img src="../images/Beaches/rock.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Rock Beach White Town, Puducherry, 605001 Inida
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-6"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-6"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Rock Beach
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.585563139888!2d79.83400701448653!3d11.933903791542544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5363206885f325%3A0xaedaf9f59b42f221!2sRock%20Beach!5e0!3m2!1sen!2sin!4v1649852623476!5m2!1sen!2sin"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            One of the most oft-visited beaches in Pondicherry, Rock Beach is quite famous among locals
+                            and tourists coming from other parts of the country. It gets its name from the numerous
+                            rocky structures that line the shore and watching the waves crashing on these rocks is an
+                            amazing sight. Rock Beach is quite popular for its local stalls that sell mouth-watering
+                            street food that you must try to enjoy the true ambience and flavours of this destination.
+                            It is a perfect place for a beach-side picnic with family and friends and you will love
+                            every bit of the time spent here. Rock Beach is also renowned for its brilliant sunrise and
+                            we highly recommend you to reach here early morning to witness the magic of multicolour hues
+                            that paint the sky during sunrise.
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------------------- Place 7 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">7. Radhanagar Beach</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/Beaches/Radhangr.jpg" data-lightbox="image-1"
+                                        data-title="Radhanagar Beach, Havelock Island"><img
+                                            src="../images/Beaches/Radhangr.jpg" class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Radhanagar Beach, Andaman and Nicobar Islands, India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-7"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-7"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Radhanagar Beach
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d1314.5889063438383!2d92.95088806248295!3d11.984470867767255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e6!4m5!1s0x3088d212164bb773%3A0x9715637d9a7265b3!2sRadhanagar%20Beach%2C%20Andaman%20and%20Nicobar%20Islands!3m2!1d11.9844552!2d92.95084539999999!4m4!1s0x3088d212164bb773%3A0x9715637d9a7265b3!3m2!1d11.9844552!2d92.95084539999999!5e0!3m2!1sen!2sin!4v1649852920240!5m2!1sen!2sin"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Once voted Asia's Best Beach by TIME Magazine, Radhanagar Beach is situated on Havelock
+                            Island in the Andaman and Nicobar Islands, which are sprinkled across the Bay of Bengal. The
+                            islands are a Union Territory of India. Radhanagar Beach (also referred to as beach number
+                            seven) is renowned for its calm, still water and fine white sand. See these recommended
+                            Havelock Island hotels for all budgets and plan your trip with our comprehensive guide to
+                            the Andaman Islands.
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------------------- Place 8 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">8. Auroville Beach</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/Beaches/auroville.webp" data-lightbox="image-1"
+                                        data-title="Auroville Beach"><img src="../images/Beaches/auroville.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Auroville Beach, Pondicherry 605101 India.
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-8"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-8"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Auroville Beach
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d41258.954588357235!2d79.83748420331797!3d11.989909605266682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3a536412b097606f%3A0x9de480df736f6b1!2sAuroville%20Beach%2C%20Tamil%20Nadu%20605101!3m2!1d11.9865408!2d79.8496571!5e0!3m2!1sen!2sin!4v1649853876865!5m2!1sen!2sin"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Auroville Beach or Auro Beach is one of the best and unusual beaches in India located near
+                            Auroville in Pondicherry. It is a famous beach in Pondicherry for beautiful seashells,
+                            shallow and crystal clear water, and sun-kissed shores. The beach is perfect for swimming
+                            and surfing, one can spot surfers, both novices and professionals on the beach early in the
+                            morning. Auroville Beach also has some of the best beach resorts in Pondicherry. And it
+                            among those few beaches in Pondicherry with shacks.
+
+                            Things to do at Auroville Beach: Swimming, surfing, strolling, and enjoying the view of
+                            Pondicherry lighthouse at night.
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------------------- Place 9 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">9. Mandvi Beach</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/Beaches/mandvi.jpg" data-lightbox="image-1"
+                                        data-title="Mandvi Beach"><img src="../images/Beaches/mandvi.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Mandvi Beach, Mandvi, Kutch Gujarat 370465 India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-9"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-9"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"> Mandvi Beach
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d58836.17212189621!2d69.29110006481736!3d22.829840272908672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e6!4m5!1s0x395135cf4739ed39%3A0x3b896afabaa76c33!2sMandvi%20Beach%2C%20Mandvi%20Rural%2C%20Gujarat%20370465!3m2!1d22.8298441!2d69.32611969999999!4m4!1s0x395135cf4739ed39%3A0x3b896afabaa76c33!3m2!1d22.8298441!2d69.32611969999999!5e0!3m2!1sen!2sin!4v1649916124651!5m2!1sen!2sin"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            The Mandvi beach is a golden-brown sprawl of sand along the southern tip of Kutch district
+                            in Gujarat. It lies south of Bhuj, the main junction. The beach lies along the namesake town
+                            that was once a thriving port for India. The fort wall of the erstwhile trading hub still
+                            runs along the old part of town. The calm beach is a refreshing addition for travelers to
+                            the town. Evenings are particularly great with the sunset and the bustle of snack stalls and
+                            balloon sellers.
+                            <br> Mandvi city was founded in 1580 by the Rao of Kutch, Khengarji. Being an integral part,
+                            the skill of the Gujarati sailors was valued by many at that time. Even Portuguese explorer
+                            Vasco da Gama, who discovered the Europe-to-India sea route in 1497, was accompanied by a
+                            Gujarati sailor.
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------------------- Place 10 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">10. dandi beach surat
+                    </h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/Beaches/dandi.jpg" data-lightbox="image-1"
+                                        data-title="Dandi Beach Surat"><img src="../images/Beaches/dandi.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Dandi beach, Dandi, Surat 396439, Gujarat India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-10"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-10"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"> dandi beach
+                                                surat
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d59642.219443964226!2d72.76210445489446!3d20.886607535201012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e6!4m5!1s0x3be0feb194e9d281%3A0xc36e133082b23e4d!2sDandi%20Beach%2C%20Dandi%2C%20Gujarat%20396412!3m2!1d20.8866111!2d72.79712409999999!4m4!1s0x3be0feb194e9d281%3A0xc36e133082b23e4d!3m2!1d20.8866111!2d72.79712409999999!5e0!3m2!1sen!2sin!4v1649916707221!5m2!1sen!2sin"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            The Salt marshes of Dandi were the site for one of the most important events in india's
+                            Independence Movemnet.In 1930,Mahatma Gandhi undertook the Salt Satyagraha protesting
+                            against the British salt laws.He Walked from Ahmedabad with a group of followers that kept
+                            growing at each stage of his protest march. At Dandi, he plucked a handful of saline mud and
+                            seawater, producing salt in producing salt in protest against the British monopoly on salt
+                            production.This simple act got much national support and is credited with breaking the back
+                            of the Raj in India.
+                            Soothe your eyes with the picturesque views of the Dandi beach that tops the list of best
+                            tourist places to see in Surat. This scenic beach is known for the “Salt Satyagraha
+                            movement”, which was started by Mahatma Gandhi. Each and every corner of the beach is
+                            covered with sparkling golden sands and offers tranquility to the visitors. Near this beach,
+                            there are several amazing spots where you can relax or read your favorite book.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <aside class="col-lg-4 d-md-none d-sm-none p-0 d-none d-lg-inline">
+
+
+
+                <!------- Top Places Section -->
+                <div class="bg-light ">
+                    <h2 class="pt-2 places-heading mt-2 fw-bold  mb-3">Discover your next holiday destination
+                    </h2>
+
+                    <div class="d-flex mb-4">
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/solo-2.jpg" class=" top-places mb-2 " alt=" ">
+                            <h4><a href="./solo.html">Solo</a></h4>
+                        </div>
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/Beaches/bg-image-2.jpg" class=" top-places mb-2" alt=" ">
+                            <h4><a href="./beaches.html"></a>Beaches</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/religious/religious.jpg" class=" top-places mb-2" alt=" ">
+                            <h4><a href="./religious.html">Religious</a></h4>
+                        </div>
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/desert/desert-bg.jpg" class=" top-places mb-2" alt=" ">
+                            <h4><a href="./desert.html">Desert</a></h4>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/girl-1.jpg" class=" top-places" alt=" ">
+                            <h4><a href="./weekend.html">weekend</a></h4>
+                        </div>
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/wildlife/wild-bg.jpg" class=" top-places" alt=" ">
+                            <h4><a href="./wildlife.html">Wildlife</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!----------- advertise ---------------->
+
+                <div class="carousal-container">
+
+                    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner ">
+                            <div class="carousel-item  active">
+                                <img src="../images/couple.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption ">
+                                    <h5 class="fs-2">Romantic Places</h5>
+                                    <p class="fs-4">In life it's not where you go. It's who you travel with.</p>
+                                    <button type="button" class="btn btn-primary mb-2"><a href="./couple.html"
+                                            class="text-light  ">Explore</a></button>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/family-4.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption ">
+                                    <h5 class="fs-2">Adventure</h5>
+                                    <p class="fs-4">Climb the mountain not so the world can see you, but so you can see
+                                        the world..</p>
+                                    <button type="button" class="btn btn-primary mb-2"><a href="./adv.html"
+                                            class="text-light ">Explore</a></button>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/family-3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption ">
+                                    <h5 class="fs-2">Family Spots</h5>
+                                    <p class="fs-4">"Travelling in the company of those we love is home in motion."</p>
+                                    <button type="button" class="btn btn-primary mb-2"><a href="./family.html"
+                                            class="text-light ">Explore</a></button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="beSticky">
+                    <h2 class="pt-2 places-heading mt-2 fw-bold  text-uppercase mb-3"> Recent Posts
+                    </h2>
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../images/frnds-1.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">There is a whole world out there. Pack your backpack, your friends and
+                                    go.</h5>
+                                <a href="./friends.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../images/solo-3.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">"Travelling alone will be the scariest, most liberating, life changing
+                                    experience of your life."</h5>
+                                <a href="./solo.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../images/girl-2.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">Recharge after a hectic week’s work with an idyllic trip over the
+                                    weekend.</h5>
+                                <a href="./weekend.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../Images/adventure-1.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">Climb the mountain not so the world can see you, but so you can see the
+                                    world.k</h5>
+                                <a href="./adv.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../Images/desert/jaisalmer.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">Top Deserts Around the Country.</h5>
+                            </div>
+                            <a href="./desert.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+
+        <!-- <div class="beSticky">
+                <h2 class="pt-2 places-heading mt-2 fw-bold  text-uppercase mb-3"> Most Viewed
+                </h2>
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+                
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+
+               </div> -->
+        </aside>
+    </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/mdb.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/lightbox.js"></script>
+</body>
+
+</html>

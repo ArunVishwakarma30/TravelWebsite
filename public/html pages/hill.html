@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a93dbb61c3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mediaQ.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
+
+    <title>Hill Stations</title>
+
+</head>
+
+<body>
+    <header class="header fixed-top shadow p-3 mb-5 bg-white rounded">
+        <div class="container py-4 d-none d-sm-block ">
+          <div class="Myrow v-center">
+            <div class="header-item item-left">
+              <p class="logo ">
+                <a href="/index.html"> Shubh Yaatra </a>
+              </p>
+            </div>
+            <div class="header-item item-center">
+              <nav class="menu">
+                <ul class="menu-main">
+                  <li class="light">
+                    <a class="parent" href="/">Home</a>
+                  </li>
+                  <li class="dropdown light">
+                    <p class="parent d-inline" href="">Categories<i class="fa-solid fa-xs fa-angle-down angle"></i>
+                    </p>
+                    <div class="sub-menu mega-menu mega-menu-clm-4">
+                      <div class="listItem">
+                        <ul>
+                          <li> <a class="ml-3" href="./beaches.html"><i
+                                class="fa-solid fa-2x mr-5 fa-umbrella-beach"></i> &nbsp Beaches
+                            </a></li>
+                          <li><img src="https://img.icons8.com/ios-filled/50/000000/cat-footprint.png" />
+                            </i><a href="./wildlife.html">&nbsp &nbsp Wildlife</a></li>
+                           <li><img src="https://img.icons8.com/dotty/80/000000/national-park.png" /></i><a
+                              href="./hill.html">&nbsp
+                              &nbsp Hill Station</a></li>
+                          <li><i class="fa-solid fa-2x fa-route"></i><a href="./adventure.html">&nbsp &nbsp
+                              Adventure</a></li> 
+    
+                        </ul>
+                      </div>
+                      <div class="listItem">
+                        <ul>
+                          <li> <img src="../Images/desert.png" alt=""> <a href="./desert.html">&nbsp Deserts</a>
+                          </li>
+                          <li><i class="fa-solid fa-2x fa-gopuram"></i><a href="./religious.html">&nbsp&nbsp
+                              Religious</a></li>
+                           <li><i class="fa-solid fa-2x fa-building-columns"></i><a
+                              href="./heritage.html">&nbsp&nbsp
+                              Heritage</a></li>
+                          <li><i class="fa-solid fa-2x fa-person-swimming"></i><a href="./waterfron.html">&nbsp
+                              Waterfront</a></li> 
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                   <li class="dropdown light">
+                    <p class="parent d-inline text-dark" href="">Region <i class="fa-solid fa-xs fa-angle-down angle"></i>
+                    </p>
+                    <div class="sub-menu single-clm-menu listItem">
+                      <ul>
+                        <li><a href="./east.html">East and North-East India</a></li>
+                        <li><a href="./north.html">North India</a></li>
+                        <li><a href="./south.html">South India</a></li>
+                        <li><a href="./west.html">West India</a></li>
+                        <li><a href="./central.html">Central India</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="light">
+                    <a class="parent" href="./blog.html">Blogs</a>
+                  </li> 
+    
+                </ul>
+              </nav>
+            </div>
+            <div class="header  login item-right">
+              <ul>
+                <li class="mybtn-secoundry   rounded">
+                  <a class="" id="open">Login
+                  </a>
+                  <div class="modal_container" id="modal_container">
+                    <div class="mymodal">
+                      <form method="post" action="/">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" name="Email" aria-describedby="emailHelp" required>
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label" >Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" name="Password" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      <button id="close" class="btn btn-danger">Close</button>
+    
+    
+    
+                    </div>
+                  </div>
+    
+                </li>
+                <li class="mybtn-secoundry  rounded">
+                  <a id="register">Register</a>
+                  <div class="modal_container" id="modal_container1">
+                    <div class="mymodal">
+                      <form action="/" method="post">
+                        <div class="mb-3">
+    
+                          <label for="FirstName" class="form-label">First Name</label>
+                          <input type="text" class="form-control" id="FirstName" name="FirstName" aria-describedby="fname" required>
+                          <div id="fname" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+    
+                          <label for="lastName" class="form-label">Last Name</label>
+                          <input type="text" class="form-control" id="lastName" name="LastName" aria-describedby="lname" required>
+                          <div id="lname" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                          
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" name="EmailAdd" aria-describedby="emailHelp" required>
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" name="Pswd" id="exampleInputPassword1" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" name="cnfrmPswd" id="exampleInputPassword1" required required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      <button id="signed_in" class="btn btn-danger">Close</button>
+    
+    
+    
+                    </div>
+                  </div>
+    
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+    
+        </div>
+        <div class="phoneNav container">
+          <button class="btn phoneMenu d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"> Menu </button>
+    
+    
+    
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+    
+    
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 id="offcanvasRightLabel"><a href="/index.html" class="logo">Subha Yaatra</a></h5>
+            </div>
+            <div class="offcanvas-body">
+    
+    
+              <div class="accordion accordion-flush text-center" id="accordionFlushExample">
+    
+                <div class="accordion-item ">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button border-0  collapsed ml-3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Categories
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-light">
+                      <ul class="list-group list-group-flush">
+    
+                        <li class="list-group-item"><a href="./beaches.html">Beaches</a> </li>
+                        <li class="list-group-item"><a href="./desert.html">Desert</a> </li>
+                        <li class="list-group-item"><a href="./wildlife.html">Wildlife</a> </li>
+                        <li class="list-group-item"><a href="./religious.html">Religious</a> </li>
+                        {{!-- <li class="list-group-item"><a href="./hill.html">Hill Station</a> </li>
+                        <li class="list-group-item"><a href="./heritage.html">Heritage</a> </li>
+                        <li class="list-group-item"><a href="./adventure.html">Adventure</a> </li>
+                        <li class="list-group-item"><a href="./waterfron.html">Waterfront</a> </li> --}}
+    
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Region
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+    
+                      <ul class="list-group list-group-flush">
+    
+                        <li class="list-group-item"> <a href="./east.html">East And North-East India</a> </li>
+                        <li class="list-group-item"> <a href="./north.html">North India</a> </li>
+                        <li class="list-group-item"> <a href="./south.html">South India</a> </li>
+                        <li class="list-group-item"> <a href="./west.html">West India</a> </li>
+                        <li class="list-group-item"> <a href="./central.html">Central India</a> </li>
+    
+    
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                        exciting happening here in terms of content, but just filling up the space to make it look, at least
+                        at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                  </div>
+                </div>
+    
+    
+              </div>
+            </div>
+          </div>
+        </div>>
+      </header>
+    
+    <head class="container-fluid ">
+        <div class="hill-bg">
+            <div
+                class="container decoration text-center d-flex flex-column text-light justify-content-center align-items-center m-auto h-100 fs-1">
+                <span class="mb-4 text-uppercase">// INDIA</span>
+                <h1 class="fw-bold text-uppercase">Top Hill Stations to Visit Near Mumbai</h1>
+            </div>
+        </div>
+    </head>
+
+
+    <div class="container mt-5 overflow-hidden">
+
+        <div class="row gx-5">
+            <div class="col-lg-8">
+                <div class="p-3  bg-light">
+                    <p class="start fs-2">
+                        Mumbai is blessed with some captivating hill stations near its city limits. An hour or two's drive is all it's going to take to reach some of the best hill stations near Mumbai, in Maharashtra, for a serene weekend getaway. People from the city often pack their bags to check out some of the best trekking spots and even visit hill stations for a break from all the heat and noise of the city. Needless to say, these hill stations near Mumbai do promise tranquillity and a mesmerising experience that would make you want to keep visiting them. We have listed out some of the top hill stations near Mumbai that you should definitely check out.
+                      </p>
+
+                    <h1 class="fw-bolder fs-1">Hill Stations In Mumbai</h1>
+                    <!------------------------------------- Place 1 --------------------------------->
+                    <h2 class="pt-2 fw-bold mb-2">1. Panchgani </h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/hills/Panchgani.jpg" data-lightbox="image-1"
+                                        data-title="Panchgani"><img src="../images/hills/Panchgani.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Panchgani, Maharashtra 412805 India (IN).
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                                            aria-controls="offcanvasWithBackdrop">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Panchgani
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60742.531938157386!2d73.75380124134556!3d17.913102917861327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2688f4cf1841b%3A0x4f096834f43be548!2sPanchgani%2C%20Maharashtra%20412805!5e0!3m2!1sen!2sin!4v1650971788332!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4 mb-2">
+                            Smackdown in the middle of five hills lies the exquisite hamlet of Panchgani. The gorgeous hill station near Mumbai is considered to be one of the best in Maharashtra. People flock over from various parts of the state to enjoy the cold breeze and great scenery that the hill station has to offer. There are a plethora of things that you can do in Panchgani such as stargazing, camping, tourist sightseeing and more. It is one of the most popular and best hill station near Mumbai that you can visit.
+                        </div>
+                    </div>
+
+
+                    <!------------------------------------- Place 2 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">2. Mahabaleshwar</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/hills/mahabakeshwar.webp" data-lightbox="image-1"
+                                        data-title="Mahabaleshwar"><img src="../images/hills/mahabakeshwar.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Mahabaleshwar Hill Station 412806 Maharashtra India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-2"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-2"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Mahabaleshwar
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3796.0305607335763!2d73.64554551456807!3d17.93072848775513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc27baef9a6567f%3A0x33d65822f2aeef56!2sMahabaleshwar%20Hill%20Station!5e0!3m2!1sen!2sin!4v1650972243372!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Another popular hill station near Mumbai is Mahabaleshwar. Often touted to be one of the best places for honeymoon in Maharashtra, Mahabaleshwar is a haven for tourists and couples. You can have a great time here and even turn your trip into a romantic sojourn as the hill station is blessed with many tourist attractions and sunrise and sunset points. You can rest assured that the place would leave you with a feeling of joy, thanks to its beauty and serenity!
+                            
+                        </div>
+                    </div>
+
+                    <!------------------------------------- Place 3 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">3. Jawahar</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/hills/jawahar.jpg" data-lightbox="image-1"
+                                        data-title="Jawahar"><img src="../images/hills/jawahar.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Jawahar, Maharashtra 401603, India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-3"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-3"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"> Jawahar
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.2121713832466!2d73.2273956146021!3d19.915461986611906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7428953ed583d%3A0x7abc64ac96b5d9a6!2sJawhar%20Hill%20Station!5e0!3m2!1sen!2sin!4v1650972459324!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Often missed by tourists and travellers in Maharashtra, Jawahar is also one of Maharashtra's best contributions of hill stations near Mumbai. The enchanting hill station is surrounded by exquisite greenery and waterfalls. In fact, it is one of the few places in Maharashtra where you can find many gorgeous waterfalls. During your trip, you should add Jai Vilas Palace and the Jawahar Fort in your itinerary list. You can also trek up to the sunset point and the Hanuman point to immerse yourself in the tranquil vibe of the place. The landscape is certainly scintillating, making Jawahar one of the best hill stations near Mumbai.
+                        </div>
+                    </div>
+
+                    <!------------------------------------- Place 4 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">4. Karjat</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/wildlife/Kaziranga.webp" data-lightbox="image-1"
+                                        data-title="Karjat"><img src="../images/wildlife/Kaziranga.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Kaziranga National Park, Assam 785609 India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-4"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-4"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Karjat
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7139.727885729026!2d92.98976762406976!3d26.52449993318502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3744fb947963bb27%3A0xafc017e8e21cfc40!2skaziranga%20national%20park%20and%20tiger%20reserve!5e0!3m2!1sen!2sin!4v1650226013827!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            This park has the largest population of one horned Rhino in the World. This national park has achieved great success with its conservation projects.
+
+                            <br>
+                            <strong>Things to do:</strong> Check out the tea plantations around the park Go on a safari to spot rhinos and tigers, Take in a view of the entire park from the watchtowers
+                            <br>
+                            <strong>Species to see:</strong> Tigers, Rhinos, Elephants, Swamp deer, Wild Buffalo
+                        </div>
+                    </div>
+
+
+                    <!------------------------------------- Place 5 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">5. Bandhavgarh National Park</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/wildlife/Bandhavgarh.jpg" data-lightbox="image-1"
+                                        data-title="Bandhavgarh National Park"><img src="../images/wildlife/Bandhavgarh.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Bandhavgarh National Park – Madhya Pradesh 484664 India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-5"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-5"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Bandhavgarh National Park
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4557750.378823135!2d82.37401879681912!3d24.711873461776406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3986a53a220f83dd%3A0x39d9beeab2028e82!2sBandhavgarh%20National%20Park!5e0!3m2!1sen!2sin!4v1650226229494!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            This Park has a large population of tigers and langurs. The park is at the center of India and is home to the famous white tiger.
+
+                            <br>
+                            <strong>Things to do:</strong> Go for a birding tour or a jeep safari to catch a glimpse of the best wildlife. Also once there, do not miss out on seeing the Khajuraho temples. Also, have a look at the Bandhavgarh fort.
+                            <br>
+                            <strong>Species to see:</strong> Bengal tigers, Elephants, deers, primates, reptiles and a large number of birds
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------------------- Place 6 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">6. Hemis National Park  </h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/wildlife/hemis.webp" data-lightbox="image-1"
+                                        data-title="Hemis National Park "><img src="../images/wildlife/hemis.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Hemis National Park – Ladakh 194106 Inida
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-6"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-6"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Hemis National Park 
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d53097.959802571095!2d77.35320283539748!3d33.71871615851475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3902707b177afb8b%3A0xf74ea9833e5618e2!2sHemis%20National%20Park%2C%20P99Q%2BF7Q%20Jammu%20and%20Kashmir!3m2!1d33.718721099999996!2d77.38822239999999!4m5!1s0x3902707b177afb8b%3A0xf74ea9833e5618e2!2sHemis%20National%20Park!3m2!1d33.718721099999996!2d77.38822239999999!5e0!3m2!1sen!2sin!4v1650226526644!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            This is a high altitude national park in eastern Ladakh. The park is home to many endangered animals like the snow leopard, the Asiatic Ibex, the red fox, Tibetan wolf. This park has pine forests, meadows and is nothing short of a safari in heaven.
+
+                            <br>
+                            <strong>Things to do:</strong> Take an adventure trek at Hemis
+                            <br>
+                            <strong>Species to see:</strong> snow leopard, the Asiatic Ibex, the red fox, Tibetan wolf, Himalayan marmot, Blue sheep
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------------------- Place 7 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">7. The Great Himalayan National Park</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/wildlife/himalayan.webp" data-lightbox="image-1"
+                                        data-title=" Tadoba National Park "><img src="../images/wildlife/himalayan.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            The Great Himalayan National Park – Himachal Pradesh 175123 India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-7"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-7"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">The Great Himalayan National Park
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.5448081167424!2d77.14071281487777!3d31.891791681248492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904345539963725%3A0x3930505b5e390442!2sThe%20Great%20Himalayan%20National%20Park(office)!5e0!3m2!1sen!2sin!4v1650226732762!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            This park is in the snowcapped mountain regions of Kullu. With coniferous forests, sloping hills and green landscapes, this park is the crowning glory of the Himalayan slopes.
+
+                            <br>
+<strong>Things to do:</strong> Take a walk among the clouds, breathe in fresh pollution free air, go on a trek among the forest lands and take a boat ride on the river Tirthan. Also camp under the stars
+<br>
+<strong>Species to see:</strong> The snow leopard, musk deer, primates, Himalayan pit viper
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------------------- Place 8 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">8.  Tadoba National Park</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/wildlife/tadoba.webp" data-lightbox="image-1"
+                                        data-title=" Tadoba National Park "><img src="../images/wildlife/tadoba.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Tadoba National Park – Maharashtra India.
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-8"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-8"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"> Tadoba National Park – Maharashtra
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.2519590878383!2d79.3585003146081!3d20.248382686426307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2ccd16b6538703%3A0x418b2e1575b004d1!2sTadoba-Andhari%20National%20Park!5e0!3m2!1sen!2sin!4v1650226884214!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Tadoba is one of the largest national parks in Maharashtra. Very close to the city, Nagpur, Tadoba is most famous for its Tigers and Tadoba crocodiles.
+                            <br>
+                            <strong>Things to do:</strong> Go on the tiger safari and bird watching trails
+                            <br>
+                            <strong>Species to see:</strong> The Chimur Hills and Andhari sanctuary
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="col-lg-4 d-md-none d-sm-none p-0 d-none d-lg-inline">
+
+
+
+                <!------- Top Places Section -->
+                <div class="bg-light ">
+                    <h2 class="pt-2 places-heading mt-2 fw-bold  mb-3">Discover your next holiday destination
+                    </h2>
+
+                    <div class="d-flex mb-4">
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/solo-2.jpg" class=" top-places mb-2 " alt=" ">
+                            <h4><a href="./solo.html">Solo</a></h4>
+                        </div>
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/Beaches/bg-image-2.jpg" class=" top-places mb-2" alt=" ">
+                            <h4><a href="./beaches.html"></a>Beaches</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/religious/religious.jpg" class=" top-places mb-2" alt=" ">
+                            <h4><a href="./religious.html">Religious</a></h4>
+                        </div>
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/desert/desert-bg.jpg" class=" top-places mb-2" alt=" ">
+                            <h4><a href="./desert.html">Desert</a></h4>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/girl-1.jpg" class=" top-places" alt=" ">
+                            <h4><a href="./weekend.html">weekend</a></h4>
+                        </div>
+                        <div class="content text-center text-decoration-underline">
+                            <img src="../images/wildlife/wild-bg.jpg" class=" top-places" alt=" ">
+                            <h4><a href="./wildlife.html">Wildlife</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!----------- advertise ---------------->
+
+                <div class="carousal-container">
+
+                    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner ">
+                            <div class="carousel-item  active">
+                                <img src="../images/couple.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption ">
+                                    <h5 class="fs-2">Romantic Places</h5>
+                                    <p class="fs-4">In life it's not where you go. It's who you travel with.</p>
+                                    <button type="button" class="btn btn-primary mb-2"><a href="./couple.html"
+                                            class="text-light  ">Explore</a></button>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/family-4.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption ">
+                                    <h5 class="fs-2">Adventure</h5>
+                                    <p class="fs-4">Climb the mountain not so the world can see you, but so you can see
+                                        the world..</p>
+                                    <button type="button" class="btn btn-primary mb-2"><a href="./adv.html"
+                                            class="text-light ">Explore</a></button>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/family-3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption ">
+                                    <h5 class="fs-2">Family Spots</h5>
+                                    <p class="fs-4">"Travelling in the company of those we love is home in motion."</p>
+                                    <button type="button" class="btn btn-primary mb-2"><a href="./family.html"
+                                            class="text-light ">Explore</a></button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="beSticky">
+                    <h2 class="pt-2 places-heading mt-2 fw-bold  text-uppercase mb-3"> Recent Posts
+                    </h2>
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../images/frnds-1.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">There is a whole world out there. Pack your backpack, your friends and
+                                    go.</h5>
+                                <a href="./friends.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../images/solo-3.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">"Travelling alone will be the scariest, most liberating, life changing
+                                    experience of your life."</h5>
+                                <a href="./solo.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../images/girl-2.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">Recharge after a hectic week’s work with an idyllic trip over the
+                                    weekend.</h5>
+                                <a href="./weekend.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../Images/adventure-1.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">Climb the mountain not so the world can see you, but so you can see the
+                                    world.k</h5>
+                                <a href="./adv.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-posts mb-5 container">
+                        <div class="d-flex position-relative">
+                            <img src="../Images/desert/jaisalmer.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                            <div>
+                                <h5 class="mt-0">Top Deserts Around the Country.</h5>
+                            </div>
+                            <a href="./desert.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+
+        <!-- <div class="beSticky">
+                <h2 class="pt-2 places-heading mt-2 fw-bold  text-uppercase mb-3"> Most Viewed
+                </h2>
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+                
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="recent-posts mb-5 container">
+                    <div class="d-flex position-relative">
+                        <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <a href="/index.html" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+
+               </div> -->
+        </aside>
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/mdb.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/lightbox.js"></script>
+</body>
+
+</html>

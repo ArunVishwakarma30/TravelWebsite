@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a93dbb61c3.js" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mediaQ.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
+
+    <title>Beaches</title>
+
+</head>
+
+<body>
+  <header class="header fixed-top shadow p-3 mb-5 bg-white rounded">
+    <div class="container py-4 d-none d-sm-block ">
+      <div class="Myrow v-center">
+        <div class="header-item item-left">
+          <p class="logo ">
+            <a href="/index.html"> Shubh Yaatra </a>
+          </p>
+        </div>
+        <div class="header-item item-center">
+          <nav class="menu">
+            <ul class="menu-main">
+              <li class="light">
+                <a class="parent" href="/">Home</a>
+              </li>
+              <li class="dropdown light">
+                <p class="parent d-inline" href="">Categories<i class="fa-solid fa-xs fa-angle-down angle"></i>
+                </p>
+                <div class="sub-menu mega-menu mega-menu-clm-4">
+                  <div class="listItem">
+                    <ul>
+                      <li> <a class="ml-3" href="./beaches.html"><i
+                            class="fa-solid fa-2x mr-5 fa-umbrella-beach"></i> &nbsp Beaches
+                        </a></li>
+                      <li><img src="https://img.icons8.com/ios-filled/50/000000/cat-footprint.png" />
+                        </i><a href="./wildlife.html">&nbsp &nbsp Wildlife</a></li>
+                       <li><img src="https://img.icons8.com/dotty/80/000000/national-park.png" /></i><a
+                          href="./hill.html">&nbsp
+                          &nbsp Hill Station</a></li>
+                      <li><i class="fa-solid fa-2x fa-route"></i><a href="./adventure.html">&nbsp &nbsp
+                          Adventure</a></li> 
+
+                    </ul>
+                  </div>
+                  <div class="listItem">
+                    <ul>
+                      <li> <img src="../Images/desert.png" alt=""> <a href="./desert.html">&nbsp Deserts</a>
+                      </li>
+                      <li><i class="fa-solid fa-2x fa-gopuram"></i><a href="./religious.html">&nbsp&nbsp
+                          Religious</a></li>
+                       <li><i class="fa-solid fa-2x fa-building-columns"></i><a
+                          href="./heritage.html">&nbsp&nbsp
+                          Heritage</a></li>
+                      <li><i class="fa-solid fa-2x fa-person-swimming"></i><a href="./waterfron.html">&nbsp
+                          Waterfront</a></li> 
+                    </ul>
+                  </div>
+                </div>
+              </li>
+               <li class="dropdown light">
+                <p class="parent d-inline text-dark" href="">Region <i class="fa-solid fa-xs fa-angle-down angle"></i>
+                </p>
+                <div class="sub-menu single-clm-menu listItem">
+                  <ul>
+                    <li><a href="./east.html">East and North-East India</a></li>
+                    <li><a href="./north.html">North India</a></li>
+                    <li><a href="./south.html">South India</a></li>
+                    <li><a href="./west.html">West India</a></li>
+                    <li><a href="./central.html">Central India</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="light">
+                <a class="parent" href="./blog.html">Blogs</a>
+              </li> 
+
+            </ul>
+          </nav>
+        </div>
+        <div class="header  login item-right">
+          <ul>
+            <li class="mybtn-secoundry   rounded">
+              <a class="" id="open">Login
+              </a>
+              <div class="modal_container" id="modal_container">
+                <div class="mymodal">
+                  <form method="post" action="/">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="Email" aria-describedby="emailHelp" required>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label" >Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" name="Password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                  <button id="close" class="btn btn-danger">Close</button>
+
+
+
+                </div>
+              </div>
+
+            </li>
+            <li class="mybtn-secoundry  rounded">
+              <a id="register">Register</a>
+              <div class="modal_container" id="modal_container1">
+                <div class="mymodal">
+                  <form action="/" method="post">
+                    <div class="mb-3">
+
+                      <label for="FirstName" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="FirstName" name="FirstName" aria-describedby="fname" required>
+                      <div id="fname" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" name="LastName" aria-describedby="lname" required>
+                      <div id="lname" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                      
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="EmailAdd" aria-describedby="emailHelp" required>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" name="Pswd" id="exampleInputPassword1" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control" name="cnfrmPswd" id="exampleInputPassword1" required required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                  <button id="signed_in" class="btn btn-danger">Close</button>
+
+
+
+                </div>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    <div class="phoneNav container">
+      <button class="btn phoneMenu d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"> Menu </button>
+
+
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+
+
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 id="offcanvasRightLabel"><a href="/index.html" class="logo">Subha Yaatra</a></h5>
+        </div>
+        <div class="offcanvas-body">
+
+
+          <div class="accordion accordion-flush text-center" id="accordionFlushExample">
+
+            <div class="accordion-item ">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button border-0  collapsed ml-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Categories
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-light">
+                  <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item"><a href="./beaches.html">Beaches</a> </li>
+                    <li class="list-group-item"><a href="./desert.html">Desert</a> </li>
+                    <li class="list-group-item"><a href="./wildlife.html">Wildlife</a> </li>
+                    <li class="list-group-item"><a href="./religious.html">Religious</a> </li>
+                    {{!-- <li class="list-group-item"><a href="./hill.html">Hill Station</a> </li>
+                    <li class="list-group-item"><a href="./heritage.html">Heritage</a> </li>
+                    <li class="list-group-item"><a href="./adventure.html">Adventure</a> </li>
+                    <li class="list-group-item"><a href="./waterfron.html">Waterfront</a> </li> --}}
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Region
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                  <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item"> <a href="./east.html">East And North-East India</a> </li>
+                    <li class="list-group-item"> <a href="./north.html">North India</a> </li>
+                    <li class="list-group-item"> <a href="./south.html">South India</a> </li>
+                    <li class="list-group-item"> <a href="./west.html">West India</a> </li>
+                    <li class="list-group-item"> <a href="./central.html">Central India</a> </li>
+
+
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                    exciting happening here in terms of content, but just filling up the space to make it look, at least
+                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>>
+  </header>
+    <head class="container-fluid">
+        <div class="cple-bg">
+            <div
+                class="container decoration text-center d-flex flex-column text-light justify-content-center align-items-center m-auto h-100 fs-1">
+                <span class="mb-4 text-uppercase"></span>
+                <h1 class="fw-bold text-uppercase">Places to visit with Your Love Ones</h1>
+            </div>
+        </div>
+    </head>
+
+
+
+
+
+
+    <div class="container mt-5 overflow-hidden">
+
+        <div class="row gx-5">
+            <div class="col-lg-8">
+                <div class="p-3  bg-light">
+                    <p class="start fs-2">
+                        No matter how many trips you have taken while you were single, there is something special — and beautiful — about traveling with someone you're heads over heels about. Not only can you finally rest your head on the plane mate beside you, but you now have a partner with whom to explore the most romantic places in the world, and — ahem — finally put that "do not disturb" sign to use.
+
+                        While happy couples will see any corner of the planet through rose-colored glasses, there are certain destinations that lend themselves to romance. From a beach excursion where no shoes or shirt are required (we're looking at you, Seychelles) to a city that twinkles under the glow of street lamps (bonjour, Paris), there are many charming spots to consider.
+                        
+                        Whether you're celebrating an anniversary, jetting off on your honeymoon, or merely seeking a getaway built for two, plan your trip with our list of the most romantic places in the world.
+                    </p>
+
+                    <h1 class="fw-bolder fs-1">Places to visit with Your Love Ones</h1>
+                    <!------------------------------------- Place 1 --------------------------------->
+                    <h2 class="pt-2 fw-bold mb-2">1. Paris, France</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/family/effil.jpg" data-lightbox="image-1"
+                                        data-title="Paris, France"><img src="../images/family/effil.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                           Parice ,France
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                                            aria-controls="offcanvasWithBackdrop">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Paris, France
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.95410705001!2d2.276995134286164!3d48.85883363923966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sin!4v1650256830423!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4 mb-2">
+                            Is any romantic roundup complete without singing the praises of the City of Lights? As the capital of France, there's a reason so many couples seek the ambience and energy of this Parisian destination. When you wander about this European city, you'll find yourselves mesmerized by idyllic coffee shops, picture-perfect cobblestone streets, and the scent of freshly-baked-everything perfuming the air. Cue collective dreamy sigh.
+
+You can spend your days exploring the many iconic love-drenched landmarks—from the infamous Eiffel Tower to the Pont Des Arts bridge outside of Notre Dame. And at night? Snuggle up in an AirBNB or dig deep into your pocketbooks for a stay at one of the most luxurious and sophisticated resorts on the planet
+                        </div>
+                    </div>
+
+
+                    <!------------------------------------- Place 2 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">2. Venice, Italy</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/family/ita.jpg" data-lightbox="image-1"
+                                        data-title="Varkala Beach"><img src="../images/family/ita.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Venice, Italy
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-2"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-2"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Venice, Italy
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d716493.1120064084!2d11.97167019411359!3d45.45366167567757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eaa16cb134829%3A0x307098715907f10!2sMetropolitan%20City%20of%20Venice%2C%20Italy!5e0!3m2!1sen!2sin!4v1650257335908!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            There's a saying that you either love or hate Venice when you visit this northern Italy city. But our guess is if you go when you're feeling butterflies, The City of Water will have them swarming.
+
+                            Even for the well-versed traveler, Venice presents an entirely new experience, since it is the capital of the Veneto region, comprised of 100 tiny islands. Here, there are very few roads, but many canals, making a gondola ride with your main squeeze a must.
+                            
+                            As you stroll hand-in-hand across romantic bridges (don't miss the Rialto Bridge, a marvel of engineering), soaking up the undeniably hospitable Italian culture, you'll witness nods to the Renaissance era, as well as Gothic landmarks.
+                            
+                            Nibble your way through St. Mark's Square, where local vendors display their handmade goods. Hold tight to your food, though, as hundreds of pigeons swarm this area in search of tasty treats.
+                        </div>
+                    </div>
+
+                    <!------------------------------------- Place 3 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">3. Santorini, Greece</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/family/santo.jpg" data-lightbox="image-1"
+                                        data-title="Santorini"><img src="../images/family/santo.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Santorini, Greece
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-3"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-3"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"> Santorini, Greece
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12842.159552480733!2d25.423415680867155!3d36.420325930455036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1499cdce05e3bce9%3A0x9f4c192bbefa1db!2sThera%20847%2000%2C%20Greece!5e0!3m2!1sen!2sin!4v1650257512660!5m2!1sen!2sin" width="100%" height="100%"" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            As one of the most popular honeymoon destinations on the planet, and one of the most beautiful Greek Islands, Santorini might require a long plane ride and a puddle jumper flight, but trust us, it is worth the journey. Blue-domed houses so white, they sparkle are a treat to behold, while the twinkling azure Aegean Sea beckons travelers in the distance.
+
+                            This picturesque sea is the main reason many newlyweds choose Santorini. In addition to its ability to cool off even the most overheated of travelers, this watery haven offers captivatingly pink, orange, and golden sunsets best viewed from the town of Oia. It's still utterly romantic, but you won't be the only ones enjoying Mother Nature's fantastic nightly display — Oia gets packed at sunset, no matter the season.
+                            
+                            Many of Santorini's boutiques, restaurants, and resorts are built into the jagged cliff sides, giving couples the chance to book a unique private escape for their trip. While walking through town, don't be surprised if you end up on someone's roof.
+                            
+                            
+                        </div>
+                    </div>
+
+                    <!------------------------------------- Place 4 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">4. Krabi, Thailand</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/family/krabi.jpg" data-lightbox="image-1"
+                                        data-title="Krabi, Thailand"><img src="../images/family/krabi.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Krabi, Thailand
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-4"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-4"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Krabi, Thailand
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63203.1860428167!2d98.86731546103177!3d8.081163960473292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305194991e242f07%3A0x748e13e4d7c99b57!2sKrabi%2C%20Pak%20Nam%2C%20Mueang%20Krabi%20District%2C%20Krabi%2081000%2C%20Thailand!5e0!3m2!1sen!2sin!4v1650257728707!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Thanks to an unbelievable shade of blue water, the low cost of aromatic and flavorful food, and dreamy beaches, many jet-setters make a point to visit the beach resorts of Thailand.
+
+                            There are dozens to choose from, with Phuket being one of the most popular, Koh Samui attracting a 20-something crowd, and Krabi being among the most romantic. Here, you will be able to disconnect in a quiet, yet gorgeous, landscape.
+                            
+                            Located in the southern area of the west coast of the country, you'll find mangroves, limestone formations, boulders, and many other works of wonder from Mother Nature herself.
+                            
+                            You can book a long-tail boat to take you to Railay Beach or go on a snorkeling tour to see colorful creatures of the sea. For a bit of a splurge, you can stay at five-star resorts, most of which come complete with beach access and a private pool for lounging.
+                        </div>
+                    </div>
+
+
+                    <!------------------------------------- Place 5 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">5. Sabi Sands Game Reserve, South Africa</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/family/idk.jpg" data-lightbox="image-1"
+                                        data-title="Sabi Sands Game Reserve, South Africa"><img src="../images/family/idk.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Sabi Sands Game Reserve, South Africa
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-5"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-5"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Sabi Sands Game Reserve, South Africa
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.121251577877!2d31.522721314702917!3d-24.927938984022052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec2b0473b264f7d%3A0xe63616011be86fa9!2sSabi%20Sands%20Game%20Reserve!5e0!3m2!1sen!2sin!4v1650257809994!5m2!1sen!2sin" width="100%" height="100%"" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Finally finding someone you could imagine sharing your life with feels like sourcing a diamond in the rough, a four-leaf clover—or well, seeing a leopard in a tree.
+
+Going on a safari in South Africa is one of those bucket list items that everyone dreams of, and there's no better person to share the immense wonder of the African bush with than your partner.
+
+Though you can drive yourself through the legendary Kruger National Park, a more romantic option is staying at a game lodge in the exemplary Sabi Sands Game Reserve, where many luxury resorts offer couple experiences you never imagined possible.
+
+You can wake up with a view of giraffes and zebras at a watering hole and end your day with an evening drive spotting the Big 5. Before you head back to your bungalow, you can cuddle in awe of the cascade of stars and constellations that shine above you and marvel at the universe that brought you together.
+Best Things To Do: Jungle safari at Nagarhole National Park, Visit the musical fountains at Raja’s Seat and Admire the hilltop views from Tadiandamol
+                        </div>
+                    </div>
+
+
+
+                   
+
+
+                </div>
+            </div>
+            <aside class="col-lg-4 d-md-none d-sm-none p-0 d-none d-lg-inline">
+
+
+
+              <!------- Top Places Section -->
+              <div class="bg-light ">
+                  <h2 class="pt-2 places-heading mt-2 fw-bold  mb-3">Discover your next holiday destination
+                  </h2>
+
+                  <div class="d-flex mb-4">
+                      <div class="content text-center text-decoration-underline">
+                          <img src="../images/solo-2.jpg" class=" top-places mb-2 " alt=" ">
+                          <h4><a href="./solo.html">Solo</a></h4>
+                      </div>
+                      <div class="content text-center text-decoration-underline">
+                          <img src="../images/Beaches/bg-image-2.jpg" class=" top-places mb-2" alt=" ">
+                          <h4><a href="./beaches.html"></a>Beaches</h4>
+                      </div>
+                  </div>
+                  <div class="d-flex mb-4">
+                      <div class="content text-center text-decoration-underline">
+                          <img src="../images/religious/religious.jpg" class=" top-places mb-2" alt=" ">
+                          <h4><a href="./religious.html">Religious</a></h4>
+                      </div>
+                      <div class="content text-center text-decoration-underline">
+                          <img src="../images/desert/desert-bg.jpg" class=" top-places mb-2" alt=" ">
+                          <h4><a href="./desert.html">Desert</a></h4>
+                      </div>
+                  </div>
+                  <div class="d-flex mb-4">
+                      <div class="content text-center text-decoration-underline">
+                          <img src="../images/girl-1.jpg" class=" top-places" alt=" ">
+                          <h4><a href="./weekend.html">weekend</a></h4>
+                      </div>
+                      <div class="content text-center text-decoration-underline">
+                          <img src="../images/wildlife/wild-bg.jpg" class=" top-places" alt=" ">
+                          <h4><a href="./wildlife.html">Wildlife</a></h4>
+                      </div>
+                  </div>
+              </div>
+
+
+              <!----------- advertise ---------------->
+
+              <div class="carousal-container">
+
+                  <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                              class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                              aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                              aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner ">
+                          <div class="carousel-item  active">
+                              <img src="../images/couple.jpg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption ">
+                                  <h5 class="fs-2">Romantic Places</h5>
+                                  <p class="fs-4">In life it's not where you go. It's who you travel with.</p>
+                                  <button type="button" class="btn btn-primary mb-2"><a href="./couple.html"
+                                          class="text-light  ">Explore</a></button>
+                              </div>
+
+                          </div>
+                          <div class="carousel-item">
+                              <img src="../images/family-4.jpg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption ">
+                                  <h5 class="fs-2">Adventure</h5>
+                                  <p class="fs-4">Climb the mountain not so the world can see you, but so you can see
+                                      the world..</p>
+                                  <button type="button" class="btn btn-primary mb-2"><a href="./adv.html"
+                                          class="text-light ">Explore</a></button>
+                              </div>
+
+                          </div>
+                          <div class="carousel-item">
+                              <img src="../images/family-3.jpg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption ">
+                                  <h5 class="fs-2">Family Spots</h5>
+                                  <p class="fs-4">"Travelling in the company of those we love is home in motion."</p>
+                                  <button type="button" class="btn btn-primary mb-2"><a href="./family.html"
+                                          class="text-light ">Explore</a></button>
+                              </div>
+
+                          </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+
+              </div>
+
+
+              <div class="beSticky">
+                  <h2 class="pt-2 places-heading mt-2 fw-bold  text-uppercase mb-3"> Recent Posts
+                  </h2>
+
+                  <div class="recent-posts mb-5 container">
+                      <div class="d-flex position-relative">
+                          <img src="../images/frnds-1.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                          <div>
+                              <h5 class="mt-0">There is a whole world out there. Pack your backpack, your friends and
+                                  go.</h5>
+                              <a href="./friends.html" class="stretched-link"></a>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <div class="recent-posts mb-5 container">
+                      <div class="d-flex position-relative">
+                          <img src="../images/solo-3.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                          <div>
+                              <h5 class="mt-0">"Travelling alone will be the scariest, most liberating, life changing
+                                  experience of your life."</h5>
+                              <a href="./solo.html" class="stretched-link"></a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="recent-posts mb-5 container">
+                      <div class="d-flex position-relative">
+                          <img src="../images/girl-2.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                          <div>
+                              <h5 class="mt-0">Recharge after a hectic week’s work with an idyllic trip over the
+                                  weekend.</h5>
+                              <a href="./weekend.html" class="stretched-link"></a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="recent-posts mb-5 container">
+                      <div class="d-flex position-relative">
+                          <img src="../Images/adventure-1.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                          <div>
+                              <h5 class="mt-0">Climb the mountain not so the world can see you, but so you can see the
+                                  world.k</h5>
+                              <a href="./adv.html" class="stretched-link"></a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="recent-posts mb-5 container">
+                      <div class="d-flex position-relative">
+                          <img src="../Images/desert/jaisalmer.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                          <div>
+                            <h5 class="mt-0">Top Deserts Around the Country.</h5>
+                          </div>
+                          <a href="./desert.html" class="stretched-link"></a>
+                      </div>
+                  </div>
+              </div>
+
+      </div>
+
+
+      <!-- <div class="beSticky">
+              <h2 class="pt-2 places-heading mt-2 fw-bold  text-uppercase mb-3"> Most Viewed
+              </h2>
+
+              <div class="recent-posts mb-5 container">
+                  <div class="d-flex position-relative">
+                      <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                      <div>
+                        <h5 class="mt-0">Custom component with stretched link</h5>
+                        <a href="/index.html" class="stretched-link"></a>
+                      </div>
+                    </div>
+              </div>
+              
+
+              <div class="recent-posts mb-5 container">
+                  <div class="d-flex position-relative">
+                      <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                      <div>
+                        <h5 class="mt-0">Custom component with stretched link</h5>
+                        <a href="/index.html" class="stretched-link"></a>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="recent-posts mb-5 container">
+                  <div class="d-flex position-relative">
+                      <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                      <div>
+                        <h5 class="mt-0">Custom component with stretched link</h5>
+                        <a href="/index.html" class="stretched-link"></a>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="recent-posts mb-5 container">
+                  <div class="d-flex position-relative">
+                      <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                      <div>
+                        <h5 class="mt-0">Custom component with stretched link</h5>
+                        <a href="/index.html" class="stretched-link"></a>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="recent-posts mb-5 container">
+                  <div class="d-flex position-relative">
+                      <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                      <div>
+                        <h5 class="mt-0">Custom component with stretched link</h5>
+                        <a href="/index.html" class="stretched-link"></a>
+                      </div>
+                    </div>
+              </div>
+
+             </div> -->
+      </aside>
+        
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/mdb.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/lightbox.js"></script>
+</body>
+
+</html>

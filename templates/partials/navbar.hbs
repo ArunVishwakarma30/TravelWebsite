@@ -1,0 +1,235 @@
+  <header class="header fixed-top shadow p-3 mb-5 bg-white rounded">
+    <div class="container py-4 d-none d-sm-block ">
+      <div class="Myrow v-center">
+        <div class="header-item item-left">
+          <p class="logo ">
+            <a href="/index.html"> Shubh Yaatra </a>
+          </p>
+        </div>
+        <div class="header-item item-center">
+          <nav class="menu">
+            <ul class="menu-main">
+              <li class="light">
+                <a class="parent" href="/">Home</a>
+              </li>
+              <li class="dropdown light">
+                <p class="parent d-inline" href="">Categories<i class="fa-solid fa-xs fa-angle-down angle"></i>
+                </p>
+                <div class="sub-menu mega-menu mega-menu-clm-4">
+                  <div class="listItem">
+                    <ul>
+                      <li> <a class="ml-3" href="./html pages/beaches.html"><i
+                            class="fa-solid fa-2x mr-5 fa-umbrella-beach"></i> &nbsp Beaches
+                        </a></li>
+                      <li><img src="https://img.icons8.com/ios-filled/50/000000/cat-footprint.png" />
+                        </i><a href="./html pages/wildlife.html">&nbsp &nbsp Wildlife</a></li>
+                       <li><img src="https://img.icons8.com/dotty/80/000000/national-park.png" /></i><a
+                          href="./html pages/hill.html">&nbsp
+                          &nbsp Hill Station</a></li>
+                      <li><i class="fa-solid fa-2x fa-route"></i><a href="./html pages/adventure.html">&nbsp &nbsp
+                          Adventure</a></li> 
+
+                    </ul>
+                  </div>
+                  <div class="listItem">
+                    <ul>
+                      <li> <img src="./Images/desert.png" alt=""> <a href="./html pages/desert.html">&nbsp Deserts</a>
+                      </li>
+                      <li><i class="fa-solid fa-2x fa-gopuram"></i><a href="./html pages/religious.html">&nbsp&nbsp
+                          Religious</a></li>
+                       <li><i class="fa-solid fa-2x fa-building-columns"></i><a
+                          href="./html pages/heritage.html">&nbsp&nbsp
+                          Heritage</a></li>
+                      <li><i class="fa-solid fa-2x fa-person-swimming"></i><a href="./html pages/waterfron.html">&nbsp
+                          Waterfront</a></li> 
+                    </ul>
+                  </div>
+                </div>
+              </li>
+               <li class="dropdown light">
+                <p class="parent d-inline text-dark" href="">Region <i class="fa-solid fa-xs fa-angle-down angle"></i>
+                </p>
+                <div class="sub-menu single-clm-menu listItem">
+                  <ul>
+                    <li><a href="./html pages/east.html">East and North-East India</a></li>
+                    <li><a href="./html pages/north.html">North India</a></li>
+                    <li><a href="./html pages/south.html">South India</a></li>
+                    <li><a href="./west.html">West India</a></li>
+                    <li><a href="./html pages/central.html">Central India</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="light">
+                <a class="parent" href="./html pages/blog.html">Blogs</a>
+              </li> 
+
+            </ul>
+          </nav>
+        </div>
+        <div class="header  login item-right">
+          <ul>
+            <li class="mybtn-secoundry   rounded">
+              <a class="" id="open">Login
+              </a>
+              <div class="modal_container" id="modal_container">
+                <div class="mymodal">
+                  <form method="post" action="/index.html">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="Email" aria-describedby="emailHelp" required>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label" >Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" name="Password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                  <button id="close" class="btn btn-danger">Close</button>
+
+
+
+                </div>
+              </div>
+
+            </li>
+            <li class="mybtn-secoundry  rounded">
+              <a id="register">Register</a>
+              <div class="modal_container" id="modal_container1">
+                <div class="mymodal">
+                  <form action="/" method="post">
+                    <div class="mb-3">
+
+                      <label for="FirstName" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="FirstName" name="FirstName" aria-describedby="fname" required>
+                      <div id="fname" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" name="LastName" aria-describedby="lname" required>
+                      <div id="lname" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                      
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="EmailAdd" aria-describedby="emailHelp" required>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" name="Pswd" id="exampleInputPassword1" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control" name="cnfrmPswd" id="exampleInputPassword1" required required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                  <button id="signed_in" class="btn btn-danger">Close</button>
+
+
+
+                </div>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    <div class="phoneNav container">
+      <button class="btn phoneMenu d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"> Menu </button>
+
+
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+
+
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 id="offcanvasRightLabel"><a href="/index.html" class="logo">Subha Yaatra</a></h5>
+        </div>
+        <div class="offcanvas-body">
+
+
+          <div class="accordion accordion-flush text-center" id="accordionFlushExample">
+
+            <div class="accordion-item ">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button border-0  collapsed ml-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Categories
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-light">
+                  <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item"><a href="./html pages/beaches.html">Beaches</a> </li>
+                    <li class="list-group-item"><a href="./html pages/desert.html">Desert</a> </li>
+                    <li class="list-group-item"><a href="./html pages/wildlife.html">Wildlife</a> </li>
+                    <li class="list-group-item"><a href="./html pages/religious.html">Religious</a> </li>
+                    {{!-- <li class="list-group-item"><a href="./html pages/hill.html">Hill Station</a> </li>
+                    <li class="list-group-item"><a href="./html pages/heritage.html">Heritage</a> </li>
+                    <li class="list-group-item"><a href="./html pages/adventure.html">Adventure</a> </li>
+                    <li class="list-group-item"><a href="./html pages/waterfron.html">Waterfront</a> </li> --}}
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Region
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                  <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item"> <a href="./html pages/east.html">East And North-East India</a> </li>
+                    <li class="list-group-item"> <a href="./html pages/north.html">North India</a> </li>
+                    <li class="list-group-item"> <a href="./html pages/south.html">South India</a> </li>
+                    <li class="list-group-item"> <a href="./html pages/west.html">West India</a> </li>
+                    <li class="list-group-item"> <a href="./html pages/central.html">Central India</a> </li>
+
+
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                    exciting happening here in terms of content, but just filling up the space to make it look, at least
+                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>>
+  </header>

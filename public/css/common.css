@@ -1,0 +1,177 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400&family=Lacquer&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Quicksand:wght@300;500;600&family=Rubik:wght@300;400&family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400&family=Berkshire+Swash&family=Lacquer&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Quicksand:wght@300;500;600&family=Rubik:wght@300;400&family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+
+
+.beaches-bg{
+    height: 75vh;
+    /* background: url(./img/header2.jpg); */
+    background:url(../Images/Beaches/bg-image.jpg);
+    /* background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)) */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+/* width="100%" height="100%" */
+
+.desert-bg{
+    height: 75vh;
+    /* background: url(./img/header2.jpg); */
+    background:url(../Images/desert/desert-bg.jpg);
+    /* background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)) */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.hill-bg{
+    height: 75vh;
+    /* background: url(./img/header2.jpg); */
+    background:url(../Images/hills/hill-bg.jpg);
+    /* background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)) */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.weekend-bg{
+    height: 75vh;
+    /* background: url(./img/header2.jpg); */
+    background:url(../Images/girl-1.jpg);
+    /* background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)) */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.solo-bg{
+    height: 75vh;
+    /* background: url(./img/header2.jpg); */
+    background:url(../Images/family/solo.jpg);
+    /* background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)) */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.family-bg{
+    height: 75vh;
+    /* background: url(./img/header2.jpg); */
+    background:url(../Images/family-2.jpg);
+    /* background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)) */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.cple-bg{
+    height: 75vh;
+    /* background: url(./img/header2.jpg); */
+    background:url(../Images/couple.jpg);
+    /* background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)) */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.frnd-bg{
+    height: 75vh;
+    /* background: url(./img/header2.jpg); */
+    background:url(../Images/frnds-1.jpg);
+    /* background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)) */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.east-bg{
+    height: 75vh;
+    /* background: url(./img/header2.jpg); */
+    background:url(../Images/region/east-bg.jpg);
+    /* background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)) */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.temple-bg{
+    height: 75vh;
+    /* background: url(./img/header2.jpg); */
+    background:url(../Images/religious/religious.jpg);
+    /* background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)) */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.wild-bg{
+    height: 75vh;
+    /* background: url(./img/header2.jpg); */
+    background:url(../Images/wildlife/wild-bg.jpg);
+    /* background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)) */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.heritage-bg{
+    height: 70vh;
+    /* background: url(./img/header2.jpg); */
+    background:url(../Images/heritage/bg-img-1.jpg);
+    /* background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)) */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.decoration{
+    word-spacing: 0.3em;
+}
+.start{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.top-places {
+    /* border: 1px solid #ddd; */
+    border-radius: 17px;
+    margin-left: 8px;
+    width: 147px;
+    /* box-shadow: 0 0 2px 1px rgb(0 140 186 / 50%); */
+    /* box-shadow: -6px 1px 35px -5px rgb(0 0 0 / 70%); */
+    /* box-shadow: 0 0 18px 0px rgb(0 150 178 / 60%); */
+    box-shadow: -6px 1px 19px -9px rgb(0 0 0 / 74%);
+}
+
+.content a{
+    color: black;
+}
+
+.places-heading{
+    padding-left: 1rem;
+}
+
+
+.carousal-container {
+    width: 312px;
+    margin: 3rem;
+}
+
+.beSticky h2{
+    margin-left: 2rem;
+}

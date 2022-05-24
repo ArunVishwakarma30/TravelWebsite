@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a93dbb61c3.js" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mediaQ.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
+
+    <title>Beaches</title>
+
+</head>
+
+<body>
+    <header class="header fixed-top shadow p-3 mb-5 bg-white rounded">
+        <div class="container py-4 d-none d-sm-block ">
+          <div class="Myrow v-center">
+            <div class="header-item item-left">
+              <p class="logo ">
+                <a href="/index.html"> Shubh Yaatra </a>
+              </p>
+            </div>
+            <div class="header-item item-center">
+              <nav class="menu">
+                <ul class="menu-main">
+                  <li class="light">
+                    <a class="parent" href="/">Home</a>
+                  </li>
+                  <li class="dropdown light">
+                    <p class="parent d-inline" href="">Categories<i class="fa-solid fa-xs fa-angle-down angle"></i>
+                    </p>
+                    <div class="sub-menu mega-menu mega-menu-clm-4">
+                      <div class="listItem">
+                        <ul>
+                          <li> <a class="ml-3" href="./beaches.html"><i
+                                class="fa-solid fa-2x mr-5 fa-umbrella-beach"></i> &nbsp Beaches
+                            </a></li>
+                          <li><img src="https://img.icons8.com/ios-filled/50/000000/cat-footprint.png" />
+                            </i><a href="./wildlife.html">&nbsp &nbsp Wildlife</a></li>
+                           <li><img src="https://img.icons8.com/dotty/80/000000/national-park.png" /></i><a
+                              href="./hill.html">&nbsp
+                              &nbsp Hill Station</a></li>
+                          <li><i class="fa-solid fa-2x fa-route"></i><a href="./adventure.html">&nbsp &nbsp
+                              Adventure</a></li> 
+    
+                        </ul>
+                      </div>
+                      <div class="listItem">
+                        <ul>
+                          <li> <img src="../Images/desert.png" alt=""> <a href="./desert.html">&nbsp Deserts</a>
+                          </li>
+                          <li><i class="fa-solid fa-2x fa-gopuram"></i><a href="./religious.html">&nbsp&nbsp
+                              Religious</a></li>
+                           <li><i class="fa-solid fa-2x fa-building-columns"></i><a
+                              href="./heritage.html">&nbsp&nbsp
+                              Heritage</a></li>
+                          <li><i class="fa-solid fa-2x fa-person-swimming"></i><a href="./waterfron.html">&nbsp
+                              Waterfront</a></li> 
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                   <li class="dropdown light">
+                    <p class="parent d-inline text-dark" href="">Region <i class="fa-solid fa-xs fa-angle-down angle"></i>
+                    </p>
+                    <div class="sub-menu single-clm-menu listItem">
+                      <ul>
+                        <li><a href="./east.html">East and North-East India</a></li>
+                        <li><a href="./north.html">North India</a></li>
+                        <li><a href="./south.html">South India</a></li>
+                        <li><a href="./west.html">West India</a></li>
+                        <li><a href="./central.html">Central India</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="light">
+                    <a class="parent" href="./blog.html">Blogs</a>
+                  </li> 
+    
+                </ul>
+              </nav>
+            </div>
+            <div class="header  login item-right">
+              <ul>
+                <li class="mybtn-secoundry   rounded">
+                  <a class="" id="open">Login
+                  </a>
+                  <div class="modal_container" id="modal_container">
+                    <div class="mymodal">
+                      <form method="post" action="/">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" name="Email" aria-describedby="emailHelp" required>
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label" >Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" name="Password" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      <button id="close" class="btn btn-danger">Close</button>
+    
+    
+    
+                    </div>
+                  </div>
+    
+                </li>
+                <li class="mybtn-secoundry  rounded">
+                  <a id="register">Register</a>
+                  <div class="modal_container" id="modal_container1">
+                    <div class="mymodal">
+                      <form action="/" method="post">
+                        <div class="mb-3">
+    
+                          <label for="FirstName" class="form-label">First Name</label>
+                          <input type="text" class="form-control" id="FirstName" name="FirstName" aria-describedby="fname" required>
+                          <div id="fname" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+    
+                          <label for="lastName" class="form-label">Last Name</label>
+                          <input type="text" class="form-control" id="lastName" name="LastName" aria-describedby="lname" required>
+                          <div id="lname" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                          
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" name="EmailAdd" aria-describedby="emailHelp" required>
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" name="Pswd" id="exampleInputPassword1" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" name="cnfrmPswd" id="exampleInputPassword1" required required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      <button id="signed_in" class="btn btn-danger">Close</button>
+    
+    
+    
+                    </div>
+                  </div>
+    
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+    
+        </div>
+        <div class="phoneNav container">
+          <button class="btn phoneMenu d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"> Menu </button>
+    
+    
+    
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+    
+    
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 id="offcanvasRightLabel"><a href="/index.html" class="logo">Subha Yaatra</a></h5>
+            </div>
+            <div class="offcanvas-body">
+    
+    
+              <div class="accordion accordion-flush text-center" id="accordionFlushExample">
+    
+                <div class="accordion-item ">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button border-0  collapsed ml-3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Categories
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-light">
+                      <ul class="list-group list-group-flush">
+    
+                        <li class="list-group-item"><a href="./beaches.html">Beaches</a> </li>
+                        <li class="list-group-item"><a href="./desert.html">Desert</a> </li>
+                        <li class="list-group-item"><a href="./wildlife.html">Wildlife</a> </li>
+                        <li class="list-group-item"><a href="./religious.html">Religious</a> </li>
+                        {{!-- <li class="list-group-item"><a href="./hill.html">Hill Station</a> </li>
+                        <li class="list-group-item"><a href="./heritage.html">Heritage</a> </li>
+                        <li class="list-group-item"><a href="./adventure.html">Adventure</a> </li>
+                        <li class="list-group-item"><a href="./waterfron.html">Waterfront</a> </li> --}}
+    
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Region
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+    
+                      <ul class="list-group list-group-flush">
+    
+                        <li class="list-group-item"> <a href="./east.html">East And North-East India</a> </li>
+                        <li class="list-group-item"> <a href="./north.html">North India</a> </li>
+                        <li class="list-group-item"> <a href="./south.html">South India</a> </li>
+                        <li class="list-group-item"> <a href="./west.html">West India</a> </li>
+                        <li class="list-group-item"> <a href="./central.html">Central India</a> </li>
+    
+    
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                        exciting happening here in terms of content, but just filling up the space to make it look, at least
+                        at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                  </div>
+                </div>
+    
+    
+              </div>
+            </div>
+          </div>
+        </div>>
+      </header>
+    <head class="container-fluid">
+        <div class="family-bg">
+            <div
+                class="container decoration text-center d-flex flex-column text-light justify-content-center align-items-center m-auto h-100 fs-1">
+                <span class="mb-4 text-uppercase">// INDIA</span>
+                <h1 class="fw-bold text-uppercase">Places to visit with family</h1>
+            </div>
+        </div>
+    </head>
+
+
+
+
+
+
+    <div class="container mt-5 overflow-hidden">
+
+        <div class="row gx-5">
+            <div class="col-lg-8">
+                <div class="p-3  bg-light">
+                    <p class="start fs-2">
+                        From the great Himalayan range in the north to the shimmering coastline of Indian Ocean in the south, and from the Gulf of Kutch in the west to the shores of the Bay of Bengal in the east, India is home to countless family destinations. And of all the major destinations, these  best family holiday destinations in India are the most gorgeous ones that are a must-visit once in a lifetime. Read on, to know more about these amazing destinations
+                        environmentally-friendly.
+                    </p>
+
+                    <h1 class="fw-bolder fs-1">Places to visit with family</h1>
+                    <!------------------------------------- Place 1 --------------------------------->
+                    <h2 class="pt-2 fw-bold mb-2">1. Srinagar, Kashmir</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/family/srinagar.webp" data-lightbox="image-1"
+                                        data-title="Marine Drive"><img src="../images/family/srinagar.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Srinagar, Kashmir India (IN), 
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                                            aria-controls="offcanvasWithBackdrop">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Marine Drive
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.209234079738!2d74.84322041494104!3d34.08977998059571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18f618c352467%3A0x92c9b69cd4488566!2zU3JpbmFnYXIgS2FzaG1pciBUb3VyaXNtINiz2LHbjNmG2q_YsSDaqdi02YXbjNixINm52YjYsduM2LLZhQ!5e0!3m2!1sen!2sin!4v1650254733908!5m2!1sen!2sin" width="100%" height="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4 mb-2">
+                            The much-celebrated heaven on earth, Srinagar is the jewel of Kashmir which happens to be the favorite destination of almost everyone in India. Rich in nature, hospitality, and experiences that blends well the amazing weather and the best places to visit in Srinagar, this bustling capital of Kashmir is the best place for a family trip in India.
+<br>
+                            Major Tourist Attractions: Dal Lake, Shalimar Bagh, Tulip Garden, Pari Mahal and Chashme Shahi.
+                            <br>
+                            Best Things To Do: Shikara ride at Dal Lake, Visit the Hazratbal Shrine and Explore the Hari Parbat.
+                        </div>
+                    </div>
+
+
+                    <!------------------------------------- Place 2 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">2. Shimala</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/family/shimala.webp" data-lightbox="image-1"
+                                        data-title="Varkala Beach"><img src="../images/family/shimala.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Shimla, Himachal Pradesh, India, Pin Code 695141
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-2"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-2"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Shimala
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54674.135227465886!2d77.12400166602107!3d31.07821466845805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390578e3e35d6e67%3A0x1f7e7ff6ff9f54b7!2sShimla%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1650254900744!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Having served as the summer capital of the British era, Shimla in Himachal Pradesh is considered to be the most famous retreats of all the best travel destinations in India. Being the most-sought destinations by all kind of travelers, shopping at Mall Road and relishing the charm of the toy train are few of the best things to do in Shimla which are enjoyed by kids and families alike.
+<br>
+                            Major Tourist Attractions: Jakhoo Temple, The Ridge, Rashtrapati Niwas, Shimla Heritage Museum and Christ Church.
+                            <br>
+                            Best Things To Do: Shopping in Mall Road, Enjoy a train ride from Kalka to Shimla and Explore the Johnnie’s Wax Museum
+                        </div>
+                    </div>
+
+                    <!------------------------------------- Place 3 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">3. Nainital</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/family/nainital.webp" data-lightbox="image-1"
+                                        data-title="Nainital"><img src="../images/family/nainital.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Nainital, Uttarakhand, India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-3"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-3"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Nainital, Uttarakhand
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27812.677027107813!2d79.43776112093526!3d29.382449056170923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0a1bc28fd9d61%3A0x7cae7ba916987db3!2sNainital%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1650255029520!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Set around a shimmering lake, Nainital is one of the top ten holiday destinations in India which serves Indian families as the best place to spend the summers at. With so many fun things to do in Nainital like that of cable car ride, and boating at the Nainital Lake, your trip to this paradise is sure to be a hit.
+<br>
+                            Major Tourist Attractions: Nainital Zoo, Naini Peak, Cave Garden, Hanuman Garhi and Jama Masjid Mosque
+                            <br>
+                            Best Things To Do: Boating in the evening at Nainital Lake, Ropeway ride to Snow View, Trek to the Tiffin Top and Birdwatching at Sattal.
+                        </div>
+                    </div>
+
+                    <!------------------------------------- Place 4 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">4. Darjeeling, West Bengal</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/family/darg.webp" data-lightbox="image-1"
+                                        data-title="Darjeeling, West Bengal"><img src="../images/family/darg.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Darjeeling, West Bengal India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-4"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-4"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Darjeeling, West Bengal
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56862.46841687379!2d88.22965543910594!3d27.03319056725803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e42e654cf501bb%3A0x4175555979d4702a!2sDarjeeling%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1650255212955!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Offering stunning views of Mount Kanchenjunga in the backdrop, Darjeeling is considered to be one of the best places for children’s holidays in India as much as it is famous for families and couples. From the quiet environs of Peace Pagoda to the joys of the Toy Train, one will never run out on fun tourist places in Darjeeling. If you are a foodie, then you must try the local food in Darjeeling and you can also visit the famous cafes and enjoy a cup of coffee. From visiting beautiful monasteries to hopping on a toy train ride, there are a lot of enticing things that you can do on your family trip to Darjeeling.
+<br>
+Major Tourist Attractions: Batasia Loop, Himalayan Zoological Park, Peace Pagoda, Samsing, Bhutia Busty Monastery and Rock Garden
+<br>
+Best Things To Do: Enjoy a ride in the toy train, Explore the monasteries at Mirik and Camping at the Tiger Hill.
+                        </div>
+                    </div>
+
+
+                    <!------------------------------------- Place 5 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">5. Coorg</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/family/coorg.webp" data-lightbox="image-1"
+                                        data-title="Coorg"><img src="../images/family/coorg.webp"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Coorg, Karnataka 581326 India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-5"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-5"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Coorg
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31170.195372434002!2d75.71736025042992!3d12.431427487549557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba50075627a7fff%3A0xaf8a66ea4651c1a6!2sMadikeri%2C%20Karnataka%20571201!5e0!3m2!1sen!2sin!4v1650255324244!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            Be it the lush greenery of coffee plantations, the cascading waterfalls, the Gothic-style churches, or the ancient forts, there are plenty of places to visit in Coorg that have something to offer to everyone across all age groups. Popularly known as Kodagu amidst the locals as well as the travelers, Coorg is undoubtedly one of the best family holiday destinations in India. This place surely tops the list of good family vacation destinations.
+<br>
+Major Tourist Attractions: Abbey Falls, Nisargadhama, Irupu Falls, Madikeri Fort, Sri Omkareshwara Temple and Pushpagiri
+<br>
+Best Things To Do: Jungle safari at Nagarhole National Park, Visit the musical fountains at Raja’s Seat and Admire the hilltop views from Tadiandamol
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------------------- Place 6 --------------------------------->
+                    <h2 class="pt-2 mt-2 fw-bold">6. Mandvi Beach</h2>
+                    <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                            <div class="col-6 p-0">
+                                <div class=" ">
+                                    <a href="../images/Beaches/mandvi.jpg" data-lightbox="image-1"
+                                        data-title="Mandvi Beach"><img src="../images/Beaches/mandvi.jpg"
+                                            class="img-thumbnail" alt="..."></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class=" ">
+                                    <h2 class="fw-bold fs-sm-5">Address</h2>
+                                    <div class="address">
+                                        <p class="mb-1">
+                                            Mandvi Beach, Mandvi, Kutch Gujarat 370465 India
+                                        </p>
+
+
+                                        <button class="btn text-capitalize my-blog-btn d-inline" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop-9"
+                                            aria-controls="offcanvasWithBackdrop ">View Map <i
+                                                class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop-9"
+                                        aria-labelledby="offcanvasWithBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"> Mandvi Beach
+                                            </h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d58836.17212189621!2d69.29110006481736!3d22.829840272908672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e6!4m5!1s0x395135cf4739ed39%3A0x3b896afabaa76c33!2sMandvi%20Beach%2C%20Mandvi%20Rural%2C%20Gujarat%20370465!3m2!1d22.8298441!2d69.32611969999999!4m4!1s0x395135cf4739ed39%3A0x3b896afabaa76c33!3m2!1d22.8298441!2d69.32611969999999!5e0!3m2!1sen!2sin!4v1649916124651!5m2!1sen!2sin"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="start fs-2 mt-4">
+                            The Mandvi beach is a golden-brown sprawl of sand along the southern tip of Kutch district
+                            in Gujarat. It lies south of Bhuj, the main junction. The beach lies along the namesake town
+                            that was once a thriving port for India. The fort wall of the erstwhile trading hub still
+                            runs along the old part of town. The calm beach is a refreshing addition for travelers to
+                            the town. Evenings are particularly great with the sunset and the bustle of snack stalls and
+                            balloon sellers.
+                            <br> Mandvi city was founded in 1580 by the Rao of Kutch, Khengarji. Being an integral part,
+                            the skill of the Gujarati sailors was valued by many at that time. Even Portuguese explorer
+                            Vasco da Gama, who discovered the Europe-to-India sea route in 1497, was accompanied by a
+                            Gujarati sailor.
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <aside class="col-lg-4 d-md-none d-sm-none p-0 d-none d-lg-inline">
+
+
+
+              <!------- Top Places Section -->
+              <div class="bg-light ">
+                  <h2 class="pt-2 places-heading mt-2 fw-bold  mb-3">Discover your next holiday destination
+                  </h2>
+
+                  <div class="d-flex mb-4">
+                      <div class="content text-center text-decoration-underline">
+                          <img src="../images/solo-2.jpg" class=" top-places mb-2 " alt=" ">
+                          <h4><a href="./solo.html">Solo</a></h4>
+                      </div>
+                      <div class="content text-center text-decoration-underline">
+                          <img src="../images/Beaches/bg-image-2.jpg" class=" top-places mb-2" alt=" ">
+                          <h4><a href="./beaches.html"></a>Beaches</h4>
+                      </div>
+                  </div>
+                  <div class="d-flex mb-4">
+                      <div class="content text-center text-decoration-underline">
+                          <img src="../images/religious/religious.jpg" class=" top-places mb-2" alt=" ">
+                          <h4><a href="./religious.html">Religious</a></h4>
+                      </div>
+                      <div class="content text-center text-decoration-underline">
+                          <img src="../images/desert/desert-bg.jpg" class=" top-places mb-2" alt=" ">
+                          <h4><a href="./desert.html">Desert</a></h4>
+                      </div>
+                  </div>
+                  <div class="d-flex mb-4">
+                      <div class="content text-center text-decoration-underline">
+                          <img src="../images/girl-1.jpg" class=" top-places" alt=" ">
+                          <h4><a href="./weekend.html">weekend</a></h4>
+                      </div>
+                      <div class="content text-center text-decoration-underline">
+                          <img src="../images/wildlife/wild-bg.jpg" class=" top-places" alt=" ">
+                          <h4><a href="./wildlife.html">Wildlife</a></h4>
+                      </div>
+                  </div>
+              </div>
+
+
+              <!----------- advertise ---------------->
+
+              <div class="carousal-container">
+
+                  <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                              class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                              aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                              aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner ">
+                          <div class="carousel-item  active">
+                              <img src="../images/couple.jpg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption ">
+                                  <h5 class="fs-2">Romantic Places</h5>
+                                  <p class="fs-4">In life it's not where you go. It's who you travel with.</p>
+                                  <button type="button" class="btn btn-primary mb-2"><a href="./couple.html"
+                                          class="text-light  ">Explore</a></button>
+                              </div>
+
+                          </div>
+                          <div class="carousel-item">
+                              <img src="../images/family-4.jpg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption ">
+                                  <h5 class="fs-2">Adventure</h5>
+                                  <p class="fs-4">Climb the mountain not so the world can see you, but so you can see
+                                      the world..</p>
+                                  <button type="button" class="btn btn-primary mb-2"><a href="./adv.html"
+                                          class="text-light ">Explore</a></button>
+                              </div>
+
+                          </div>
+                          <div class="carousel-item">
+                              <img src="../images/family-3.jpg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption ">
+                                  <h5 class="fs-2">Family Spots</h5>
+                                  <p class="fs-4">"Travelling in the company of those we love is home in motion."</p>
+                                  <button type="button" class="btn btn-primary mb-2"><a href="./family.html"
+                                          class="text-light ">Explore</a></button>
+                              </div>
+
+                          </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+
+              </div>
+
+
+              <div class="beSticky">
+                  <h2 class="pt-2 places-heading mt-2 fw-bold  text-uppercase mb-3"> Recent Posts
+                  </h2>
+
+                  <div class="recent-posts mb-5 container">
+                      <div class="d-flex position-relative">
+                          <img src="../images/frnds-1.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                          <div>
+                              <h5 class="mt-0">There is a whole world out there. Pack your backpack, your friends and
+                                  go.</h5>
+                              <a href="./friends.html" class="stretched-link"></a>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <div class="recent-posts mb-5 container">
+                      <div class="d-flex position-relative">
+                          <img src="../images/solo-3.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                          <div>
+                              <h5 class="mt-0">"Travelling alone will be the scariest, most liberating, life changing
+                                  experience of your life."</h5>
+                              <a href="./solo.html" class="stretched-link"></a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="recent-posts mb-5 container">
+                      <div class="d-flex position-relative">
+                          <img src="../images/girl-2.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                          <div>
+                              <h5 class="mt-0">Recharge after a hectic week’s work with an idyllic trip over the
+                                  weekend.</h5>
+                              <a href="./weekend.html" class="stretched-link"></a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="recent-posts mb-5 container">
+                      <div class="d-flex position-relative">
+                          <img src="../Images/adventure-1.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                          <div>
+                              <h5 class="mt-0">Climb the mountain not so the world can see you, but so you can see the
+                                  world.k</h5>
+                              <a href="./adv.html" class="stretched-link"></a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="recent-posts mb-5 container">
+                      <div class="d-flex position-relative">
+                          <img src="../Images/desert/jaisalmer.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                          <div>
+                            <h5 class="mt-0">Top Deserts Around the Country.</h5>
+                          </div>
+                          <a href="./desert.html" class="stretched-link"></a>
+                      </div>
+                  </div>
+              </div>
+
+      </div>
+
+
+      <!-- <div class="beSticky">
+              <h2 class="pt-2 places-heading mt-2 fw-bold  text-uppercase mb-3"> Most Viewed
+              </h2>
+
+              <div class="recent-posts mb-5 container">
+                  <div class="d-flex position-relative">
+                      <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                      <div>
+                        <h5 class="mt-0">Custom component with stretched link</h5>
+                        <a href="/index.html" class="stretched-link"></a>
+                      </div>
+                    </div>
+              </div>
+              
+
+              <div class="recent-posts mb-5 container">
+                  <div class="d-flex position-relative">
+                      <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                      <div>
+                        <h5 class="mt-0">Custom component with stretched link</h5>
+                        <a href="/index.html" class="stretched-link"></a>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="recent-posts mb-5 container">
+                  <div class="d-flex position-relative">
+                      <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                      <div>
+                        <h5 class="mt-0">Custom component with stretched link</h5>
+                        <a href="/index.html" class="stretched-link"></a>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="recent-posts mb-5 container">
+                  <div class="d-flex position-relative">
+                      <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                      <div>
+                        <h5 class="mt-0">Custom component with stretched link</h5>
+                        <a href="/index.html" class="stretched-link"></a>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="recent-posts mb-5 container">
+                  <div class="d-flex position-relative">
+                      <img src="../images/couple.jpg" class="flex-shrink-0 me-3 top-places" alt="...">
+                      <div>
+                        <h5 class="mt-0">Custom component with stretched link</h5>
+                        <a href="/index.html" class="stretched-link"></a>
+                      </div>
+                    </div>
+              </div>
+
+             </div> -->
+      </aside>
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/mdb.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/lightbox.js"></script>
+</body>
+
+</html>
